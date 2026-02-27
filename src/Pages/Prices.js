@@ -4,7 +4,6 @@ import "./Prices.css";
 import NavbarMenu from "../Layout/NavbarMenu";
 import NavbarMenuMobile from "../Layout/NavbarMenuMobile";
 import Navbar2 from "../Layout/Navbar2";
-import TopButton from "../Components/TopButton";
 import Footer from "../Layout/Footer";
 import PricingVideo from "../Layout/PricingVideo";
 import PricingPhotography from "../Layout/PricingPhotography";
@@ -36,8 +35,6 @@ function Prices() {
         { id: "branding", label: t("Prices.Button4"), component: <PricingBranding/> },
         { id: "digitalmarketing", label: t("Prices.Button5"), component: <PricingDigitalMarketing/> },
         { id: "music", label: t("Prices.Button6"), component: <PricingMusic/> },
-        // { id: "music", label: "Music Production Pricing", component: <PricingDigitalMarketing/> },
-        // { id: "music", label: "Music Production Pricing", component: <PricingDigitalMarketing/> },
     ];
 
     return (
@@ -98,8 +95,6 @@ function Prices() {
                     </div>
                 )}
             </div>
-
-            {/*<TopButton />*/}
             <WhatsappFunction/>
             <Footer />
         </div>
