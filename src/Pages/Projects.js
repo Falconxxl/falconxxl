@@ -1,6 +1,5 @@
 import './Projects.css';
 import NavbarMenu from "../Layout/NavbarMenu";
-import TopButton from "../Components/TopButton";
 import Navbar2 from "../Layout/Navbar2";
 import Footer from "../Layout/Footer";
 import NavbarMenuMobile from "../Layout/NavbarMenuMobile";
@@ -8,9 +7,7 @@ import NavbarMenuMobile from "../Layout/NavbarMenuMobile";
 import video_boucle_banner from "../MyVideos/z_banner40 (quality 40MB).mp4";
 import video_boucle_banner_mobile from "../MyVideos/Banner_Site_ boucle (Mobile 10).mp4";
 
-import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
-
 import React, { useState, useEffect } from "react";
 import PageLoader from "../Components/PageLoader";
 
@@ -144,32 +141,6 @@ function Projects() {
 
                 {/*------------Our Branding Divisions----------------*/}
 
-                {/*<div className="Container-OurWorkflow" style={{ backgroundColor: "white" }}>*/}
-                {/*    <h1 style={{ color: "#1c6077" }}>Our Branding Divisions</h1>*/}
-
-                {/*    <div className="OurWorkflow-wrapper">*/}
-                {/*        <div className="Container-OurWorkflow-content" style={{ backgroundColor: "black" }}>*/}
-                {/*            <img src={branding_image1} alt="" style={{ width: "100%" }} />*/}
-                {/*            <h2>Brand Identity & Core Design</h2>*/}
-                {/*        </div>*/}
-
-                {/*        <div className="Container-OurWorkflow-content" style={{ backgroundColor: "black" }}>*/}
-                {/*            <img src={branding_image2} alt="" style={{ width: "100%" }} />*/}
-                {/*            <h2>Product & Packaging Design</h2>*/}
-                {/*        </div>*/}
-
-                {/*        <div className="Container-OurWorkflow-content" style={{ backgroundColor: "black" }}>*/}
-                {/*            <img src={branding_image3} alt="" style={{ width: "100%" }} />*/}
-                {/*            <h2>Digital & Online Branding</h2>*/}
-                {/*        </div>*/}
-
-                {/*        <div className="Container-OurWorkflow-content" style={{ backgroundColor: "black" }}>*/}
-                {/*            <img src={branding_image4} alt="" style={{ width: "100%" }} />*/}
-                {/*            <h2>Marketing & Campaign Design</h2>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-
                 <div className="Container-OurWorkflow" style={{backgroundColor:"white"}}>
                     <h1 style={{color:"#1c6077"}}>{t("Branding.OurBrandingDivisions.BigTitle")}</h1>
 
@@ -274,7 +245,7 @@ function Projects() {
                     </div>
                 </div>
 
-                {/*<TopButton/>*/}
+
                 <WhatsappFunction/>
                 <Footer/>
             </div>

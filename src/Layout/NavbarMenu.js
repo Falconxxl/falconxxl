@@ -1,7 +1,8 @@
 import './NavbarMenu.css';
 import {NavLink} from "react-router-dom";
 import logo from '../Assets/2.Logo_Falcon_XX_4_jaune.png';
-import React, { useState } from 'react';
+import React from 'react';
+// import React, { useState } from 'react';
 import { useTranslation } from "react-i18next";
 import LanguageDropdown from "../Components/LanguageDropdown"
 // import { FaTimes, FaBars } from "react-icons/fa";
@@ -9,12 +10,8 @@ import LanguageDropdown from "../Components/LanguageDropdown"
 
 function NavbarMenu() {
 
-    const [click, setClick] = useState(false)
-
-    const handleClick = () => setClick(!click)
-
-    const closeMenu = () => setClick(false)
-
+    // const [click, setClick] = useState(false)
+    // const closeMenu = () => setClick(false)
 
     // -----------------------------------------------------------------------------------
 
@@ -52,7 +49,8 @@ function NavbarMenu() {
                     <li>
                         <div className="dropdown button-Menu"
                              spy={true} smooth={true} offset={50} duration={500}
-                             onClick={closeMenu} id='nav-item'>
+                             // onClick={closeMenu} id='nav-item'
+                        >
                             {t("NavbarMenu.Services")}
 
                             <div className="dropdown-content">

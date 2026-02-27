@@ -8,7 +8,7 @@ import Navbar2 from "../Layout/Navbar2";
 import desktop_banner_photograhy from "../Images/background_Brenda_blue2.png";
 import mobile_banner from "../Images/background_Brenda_blue_mobile4.png";
 
-import batemburg_direction_photo from "../Images/Batemburg_photography_models";
+import batemburgpic from "../Images/Batemburg_photography_models";
 import mike_direction_photo from "../Images/mike_photography_model2";
 
 import { Link } from "react-scroll";
@@ -107,7 +107,7 @@ function Photography() {
                 <section className="audiovisual-direction-Mike">
                     <div className="direction-Mike-inner">
                         <div className="audiovisual-direction-image">
-                            <img src={batemburg_direction_photo} alt="Direction photo" />
+                            <img src={batemburgpic} alt="Portrait of the company director" />
                         </div>
                         <div className="audiovisual-direction-text">
                             <div className="audiovisual-direction-badge"></div>
@@ -136,7 +136,7 @@ function Photography() {
                             </p>
                         </div>
                         <div className="audiovisual-direction-image">
-                            <img src={mike_direction_photo} alt="Direction photo" />
+                            <img src={mike_direction_photo} alt="Direction mike monic" />
                         </div>
                     </div>
                 </section>

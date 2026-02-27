@@ -2,8 +2,6 @@
 // Replace image imports with your actual image paths
 // Replace contact@votresite.com and phone numbers with real ones
 
-import devWebImg from "../Images/dev-web.png";
-
 const WHATSAPP_NUMBER = "XXXXXXXXXXXX"; // ex: "32685533124"
 const EMAIL = "contact@votresite.com";
 const PHONE = "+XX XXX XXX XXX";

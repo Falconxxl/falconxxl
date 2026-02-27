@@ -1,6 +1,5 @@
 import './Trainings.css';
 import NavbarMenu from "../Layout/NavbarMenu";
-import TopButton from "../Components/TopButton";
 import Navbar2 from "../Layout/Navbar2";
 import Footer from "../Layout/Footer";
 import NavbarMenuMobile from "../Layout/NavbarMenuMobile";
@@ -29,9 +28,6 @@ function Trainings() {
             </div>
 
             <TesstFxTranslate/>
-
-
-            {/*<TopButton/>*/}
             <WhatsappFunction/>
             <Footer/>
         </div>

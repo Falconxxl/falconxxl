@@ -10,7 +10,6 @@ function Hamburger() {
 
     const [menuOpen, setMenuOpen] = useState(false);
     const [servicesOpen, setServicesOpen] = useState(false);
-    const [extraOpen, setExtraOpen] = useState(false);
 
     return (
         <div className="navbar-hamburger">

@@ -2,7 +2,7 @@ import './About.css';
 import NavbarMenu from "../Layout/NavbarMenu";
 
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "../Components/LanguageSwitcher";
+// import LanguageSwitcher from "../Components/LanguageSwitcher";
 
 import Footer from "../Layout/Footer";
 import NavbarMenuMobile from "../Layout/NavbarMenuMobile";

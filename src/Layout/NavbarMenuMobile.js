@@ -1,21 +1,16 @@
 import './NavbarMenuMobile.css';
-// import '../App.css';
 import {NavLink} from "react-router-dom";
-// // import {Link} from 'react-scroll';
 import logo from '../Assets/2.Logo_Falcon_XX_4_jaune.png';
-// import React, { useState } from 'react';
 import { useTranslation } from "react-i18next";
 import LanguageDropdown from "../Components/LanguageDropdown"
 import Hamburger from "../Components/Hamburger";
 
 
-
 function NavbarMenu() {
-
 
     // ------------------------languages selector--------------------------------------
 
-    const { i18n, t } = useTranslation();
+    const { i18n } = useTranslation();
 
     // --------------------------------------------------------------
 
