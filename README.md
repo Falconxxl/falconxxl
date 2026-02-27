@@ -1,70 +1,197 @@
-# Getting Started with Create React App
+
+# Installation and Startup
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## 1. Clone the project
+
+https://github.com/Falconxxl/falconxxl.git
+
+git@github.com:Falconxxl/falconxxl.git
+
+## 2. Install dependencies
+
+After cloning the project to your local machine, install the dependencies:
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+This will automatically install all dependencies listed in package.json, including:
+•	react
+•	react-dom
+•	react-hook-form
+•	react-router-dom@5.2.0
+⚠️ You do not need to install these libraries separately if they are already present in the package.json file.
+
+## 3. Run the application
+
+### `npm start`
+
+The application will be available by default at:
+http://localhost:3000
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Main Dependencies
 
-### `npm test`
+## React Hook Form
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Used for form handling and validation.
+Manual installation if needed:
 
-### `npm run build`
+### `npm install react-hook-form`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## React Router (react-router-dom@6.22.3)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Used for navigation between pages.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Manual installation if needed:
 
-### `npm run eject`
+### `npm install react-router-dom@6.22.3`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## @emailjs/browser
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Allows sending emails directly from the browser via `EmailJS`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Manual installation if needed:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### `npm install @emailjs/browser`
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## @fontsource/poppins
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Poppins font for the React application.
+Manual installation if needed:
 
-### Code Splitting
+### `npm install @fontsource/poppins`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## date-fns
 
-### Analyzing the Bundle Size
+Library for manipulating and formatting dates.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Manual installation if needed:
 
-### Making a Progressive Web App
+### `npm install date-fns`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## i18next
 
-### Advanced Configuration
+Library for internationalization and translations.
+Manual installation if needed:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### `npm install i18next`
 
-### Deployment
+## react
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Main React library for building the user interface.
 
-### `npm run build` fails to minify
+Manual installation if needed:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `npm install react`
+
+## react-dom
+
+Used to render React components into the DOM.
+
+Manual installation if needed:
+
+### `npm install react-dom`
+
+## react-i18next
+
+Bindings to use i18next within React components.
+
+Manual installation if needed:
+
+### `npm install react-i18next`
+
+## react-icons
+
+Icon library for React.
+
+Manual installation if needed:
+
+### `npm install react-icons`
+
+## react-router-dom
+
+Used for routing and navigation in React (React Router v6).
+
+Manual installation if needed:
+
+### `npm install react-router-dom`
+
+## react-datepicker
+
+React component for selecting dates easily.
+
+Manual installation if needed:
+
+### `npm install react-datepicker`
+
+## react-scroll
+
+Provides smooth scrolling animations in React pages.
+
+Manual installation if needed:
+
+### `npm install react-scroll`
+
+## react-scripts
+
+Scripts and configuration provided by Create React App.
+
+Manual installation if needed:
+
+### `npm install react-scripts`
+
+## web-vitals
+
+Used to measure application performance (Core Web Vitals).
+
+Manual installation if needed:
+
+### `npm install web-vitals`
+
+# 🧪 Testing Dependencies
+
+## @testing-library/react
+
+Used for testing React components.
+
+### `npm install @testing-library/react`
+
+## @testing-library/dom
+
+Utilities for testing the DOM.
+
+### `npm install @testing-library/dom`
+
+## @testing-library/jest-dom
+
+Additional matchers for Jest and the DOM.
+
+### `npm install @testing-library/jest-dom`
+
+## @testing-library/user-event
+
+Simulates user interactions for testing.
+npm install @testing-library/user-event
+
+### `npm install @testing-library/user-event`
+
+# In Index.html
+
+## Google Fonts (Montserrat) ✅
+
+### `<link href="https://fonts.googleapis.com/css2?family=Montserrat..." />`
+
+## Font Awesome (important)
+
+### `<script src="https://kit.fontawesome.com/..."></script>`
+
+## Swiper.js
+
+### `<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>`
+
+

@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Container-ServiceHome {
+    width: 100%;
+    height: auto;
+    background-color: #f3bb2f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    gap: 60px;
+}
+
+.title-ServiceHome {
+    font-size: clamp(35px, 4vw, 48px); /* adapte la taille selon l'écran */
+    font-weight: 800;
+    /*margin: 0;*/
+    font-family: "Poppins", sans-serif;
+    /*margin: 50px;*/
+    /*color: black;*/
+    color: black;
+    text-align: center;
+    /*width: 900px;*/
+    /*padding-bottom: 20px;*/
+}
+
+.title-ServiceHome-mobile {
+    display: none;
+}
+
+.Container-ServiceHome-single {
+    width: 80%;
+    height: auto;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 70px;
+    border-radius: 50px;
+    /*gap: 50px;*/
+}
+
+.text-Container-ServiceHome-single{
+    width: 500px;
+    height: auto;
+    /*background-color: yellow;*/
+}
+
+.text-Container-ServiceHome-single h3 {
+    /*color:black;*/
+    font-size: clamp(35px, 4vw, 36px); /* adapte la taille selon l'écran */
+    font-weight: 700;
+    /*margin: 0;*/
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+    /*color: #1c6077;*/
+    color: #f3bb2f;
+    /*background-color: #fcd552;*/
+    display: flex;
+    align-items: center;
+}
+
+.text-Container-ServiceHome-single h2 {
+    font-size: clamp(27px, 4vw, 20px);
+    font-weight: 600;
+    /*color: black;*/
+    color: white;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.text-Container-ServiceHome-single p {
+    font-size: 15px;
+    line-height: 1.6;
+    /*color: #555;*/
+    color: white;
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-text-Container-ServiceHome-single {
+    /*background-color: #0091ff;*/
+    background-color: #1c1c1c;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px 40px;
+    border: 2px solid  #f3bb2f;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    /*word-spacing: 3px;*/
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-text-Container-ServiceHome-single i {
+    margin-left: 15px; /* espace à gauche de l’icône */
+}
+
+.btn-text-Container-ServiceHome-single:hover {
+    background-color: #f3bb2f;
+    color: #1c1c1c;
+    /*transform: scale(1.05);*/
+}
+
+.media-Container-ServiceHome-single {
+    width: 100%;        /* prend toute la largeur dispo */
+    max-width: 600px;   /* limite la taille max sur grand écran */
+    height: auto;       /* pas de hauteur fixe */
+    /*background: transparent;*/
+    background-color:  #f3bb2f;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid  #f3bb2f;
+    padding: 20px;
+    align-items: center;
+    /*transition: transform 0.3s ease;*/
+}
+
+.media-Container-ServiceHome-single-x {
+    width: 100%;        /* prend toute la largeur dispo */
+    max-width: 600px;   /* limite la taille max sur grand écran */
+    height: auto;       /* pas de hauteur fixe */
+    /*background: transparent;*/
+    background-color: #f3bb2f;
+    border: 1px solid #f3bb2f;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    /*border: 2px solid  #f3bb2f;*/
+    padding: 0px;
+    align-items: center;
+    /*transition: transform 0.3s ease;*/
+    /*overflow: hidden; !* IMPORTANT *!*/
+
+}
+
+.media-Container-ServiceHome-single {
+    /*transition: transform 0.3s ease;*/
+    border: 1px solid #f3bb2f;
+}
+
+.icon_home_services {
+    width: 8%;
+    height: 100%;
+    margin-right: 20px;
+    color: #f3bb2f;
+}
+
+
+.image-mike_brenda-home {
+    width: 100%;     /* prend toute la largeur du parent */
+    /*height: auto;    !* garde le ratio *!*/
+    /*max-width: 600px;*/
+    border-radius: 0px;
+    /*border: 1px solid #f3bb2f;*/
+    /*transition: transform 0.3s ease;*/
+
+}
+
+.image-mike_brenda-home:hover {
+    /*transform: scale(1.01);*/
+}
+
+
+.image-mike_brenda-home-x {
+    width: 100%;     /* prend toute la largeur du parent */
+    height: auto;    /* garde le ratio */
+    border-radius: 40px;
+    /*border: 2px solid  #f3bb2f;*/
+    border: none;
+    /*transition: transform 0.3s ease;*/
+}
+
+.image-mike_brenda-home-x:hover {
+    /*transform: scale(1.01);*/
+}
+
+/*-------------------@media query--------------------*/
+
+
+/* Mobile */
+@media (max-width: 1450px) {
+    .Container-ServiceHome {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .Container-ServiceHome-single {
+        width: 90%;
+        gap: 50px;
+        /*background-color: red;*/
+    }
+}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .Container-ServiceHome {
+        width: 100%;
+        height: auto;
+        /*background: linear-gradient(to bottom, #e0e0e0, white);*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 100px;
+        gap: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .Container-ServiceHome-single {
+        padding: 40px;
+    }
+
+    .title-ServiceHome {
+        display: none;
+    }
+
+    .title-ServiceHome-mobile{
+        font-size: clamp(36px, 4vw, 65px); /* adapte la taille selon l'écran */
+        font-weight: 800;
+        color: black;
+        /*text-align: center;*/
+        padding-bottom: 0px;
+        font-family: "Poppins", sans-serif;
+        display: block;
+        /*margin: 3px;*/
+        margin-left: 20px;
+        /*background-color: #f3bb2f;*/
+
+    }
+
+    .text-Container-ServiceHome-single h3 {
+        /*color:black;*/
+        font-size: clamp(28px, 4vw, 35px); /* adapte la taille selon l'écran */
+        font-weight: 700;
+        /*margin: 0;*/
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 10px;
+        /*color: #1c6077;*/
+    }
+
+    .text-Container-ServiceHome-single h3 {
+        display: flex;
+        align-items: center;
+    }
+
+    .text-Container-ServiceHome-single h2 {
+        font-size: clamp(22px, 4vw, 20px);
+    }
+
+    .icon_home_services {
+        width: 10%;
+        height: 100%;
+        margin-right: 10px;
+    }
+
+    .media-Container-ServiceHome-single {
+        padding: 10px;
+    }
+
+    .media-Container-ServiceHome-single-x {
+        padding: 0px;
+    }
+
+}

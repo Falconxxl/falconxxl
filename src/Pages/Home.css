@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.Section-WhoAreWe {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    flex-wrap: wrap;
+    /*background-color: #0091ff;*/
+    padding-bottom: 50px;
+    padding-top: 70px;
+}
+
+.WhoAreWe-left {
+    width: 600px;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-weight: 200;
+    /*background-color: #fcd552;*/
+    font-size: 50px;
+}
+
+.WhoAreWe-left h1 {
+    font-size: clamp(35px, 4vw, 48px); /* adapte la taille selon l'écran */
+    font-weight: 700;
+    /*margin: 0;*/
+    font-family: "Poppins", sans-serif;
+    /*margin: 50px;*/
+    color: white;
+    /*width: 410px;*/
+    /*background-color: #f3bb2f;*/
+    margin-right: 50px;
+    /*margin-top: 30px;*/
+}
+
+.WhoAreWe-right {
+    /*background-color: #3f97fb;*/
+    width: 750px;
+    height: 37vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.WhoAreWe-title {
+    font-size: clamp(24px, 4vw, 24px);  /* adapte la taille selon l'écran */
+    font-weight: 500;
+    margin: 0;
+    color: #f3bb2f;
+    font-family: "poppins", sans-serif;
+}
+
+.WhoAreWe-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* espace vertical entre les éléments */
+    /*max-width: 850px;*/
+    /*margin: 0 auto;*/
+    padding: 20px 25px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+/* Élément individuel */
+.checklist-item {
+    display: flex;
+    /*align-items: center;*/
+    gap: 20px; /* espace entre l’icône et le texte */
+    font-size: 17px;
+    line-height: 1.6;
+    /*background-color: #0091ff;*/
+}
+
+/* Icône verte */
+.checklist-item i{
+    color: #f3bb2f;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+/* Texte */
+.checklist-item div {
+    font-weight: 500;
+    color: white;
+}
+
+/*!*-------------------------------------------*!*/
+
+
+@media screen and (max-width:1350px) {
+
+    .WhoAreWe-left {
+        /*background-color: orangered;*/
+        width: 750px;
+        height: auto;
+        display: flex;
+        justify-content: left;
+        /*justify-content: center;*/
+        align-items: center;
+        font-weight: 200;
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    .WhoAreWe-right {
+        /*background-color: #3f97fb;*/
+        width: 750px;
+        height: 37vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .WhoAreWe-left h1 {
+        width: 70%;
+        font-size: clamp(35px, 4vw, 40px); /* adapte la taille selon l'écran */
+        font-weight: 700;
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+
+/*-------------------*/
+
+@media screen and (max-width:940px) {
+
+    .Section-WhoAreWe {
+        width: 100%;
+        padding: 50px 5px; /* 50px haut/bas, 20px gauche/droite */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .WhoAreWe-left {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*background-color: #0091ff;*/
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+
+    .WhoAreWe-left h1 {
+        font-size: clamp(36px, 4vw, 48px); /* adapte la taille selon l'écran */
+        font-weight: 800;
+        margin: 0;
+        width: 600px;
+    }
+
+    .WhoAreWe-right {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;    /* un petit padding pour éviter que le texte touche les bords */
+    }
+
+    .WhoAreWe-title {
+        font-size: clamp(24px, 4vw, 25px);  /* adapte la taille selon l'écran */
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .WhoAreWe-text {
+        font-size: 17.5px; /* adapte la taille selon l'écran */
+        font-weight: 400;
+    }
+
+    .WhoAreWe-text {
+        /*grid-template-columns: repeat(2, 1fr);*/
+        gap: 16px 30px;
+
+    }
+
+}
