@@ -4,14 +4,16 @@ import Navbar2 from "../Layout/Navbar2";
 import NavbarMenuMobile from "../Layout/NavbarMenuMobile";
 import Footer from "../Layout/Footer";
 
-import desktop_banner_branding from "../Images/background_sky_green_yellow12.png";
-import mobile_banner from "../Images/background_Brenda_blue_mobile8.png";
+import desktop_banner_branding from "../Images/background_sky_green_yellow12.jpg";
+import mobile_banner from "../Images/background_Brenda_blue_mobile8.jpg";
 
 import {Link} from "react-scroll";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import RequestAQuoteModal from "../Components/Modal/RequestAQuoteModal";
 import RequestAQuote from "../Components/RequestAQuote";
+import PageLoader from "../Components/PageLoader";
+
 
 import TypeBranding from "../Layout/TypeBranding";
 
@@ -30,8 +32,24 @@ function BrandIdentity() {
 
     const [openQuote, setOpenQuote] = useState(false);
 
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        // images lourdes → petit délai pour rendu fluide
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 800);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+
     return (
-        <div>
+
+        <>
+            {loading && <PageLoader />}
+
+    <div>
             <NavbarMenu/>
             <NavbarMenuMobile/>
             <Navbar2/>
@@ -283,6 +301,8 @@ function BrandIdentity() {
             <WhatsappFunction/>
             <Footer/>
         </div>
+
+      </>
     );
 }
 

@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./PhotographyGallery.css";
-// import "@fortawesome/fontawesome-free/css/all.min.css"; // <-- important
 
-// ✅ Import correct de ton image locale
 import photography_nahile from "../../src/Images/photography_nahile1.png";
 import photography_brenda1 from "../../src/Images/photography_brenda1";
 import photography_falconxxl_background from "../../src/Images/photography_falconxxl_background.png";
@@ -29,10 +27,35 @@ import photography_emotive3 from "../../src/Images/photography_emotive3.png";
 import photography_emotive5 from "../../src/Images/photography_emotive5.png";
 import { useTranslation } from "react-i18next";
 
+// ─────────────────────────────────────────────
+// Hook : renvoie true si l'écran correspond à la query
+// ─────────────────────────────────────────────
+function useMediaQuery(query) {
+    const [matches, setMatches] = useState(
+        () => window.matchMedia(query).matches
+    );
 
+    useEffect(() => {
+        const mediaQueryList = window.matchMedia(query);
+        const handler = (event) => setMatches(event.matches);
+
+        mediaQueryList.addEventListener("change", handler);
+        return () => mediaQueryList.removeEventListener("change", handler);
+    }, [query]);
+
+    return matches;
+}
+
+// ─────────────────────────────────────────────
+// Composant principal
+// ─────────────────────────────────────────────
 function PhotographyGallery() {
 
     const { t } = useTranslation();
+
+    // true  → desktop (> 768px) → photos cliquables
+    // false → mobile (≤ 768px) → photos non cliquables
+    const isDesktop = useMediaQuery("(min-width: 769px)");
 
     const sections = [
         {
@@ -88,7 +111,6 @@ function PhotographyGallery() {
                 photography_emotive5,
                 photography_emotive2,
                 photography_emotive3,
-                // photography_emotive4,
             ],
         },
     ];
@@ -98,6 +120,8 @@ function PhotographyGallery() {
     const [activeImageIndex, setActiveImageIndex] = useState(0);
 
     const openModal = (sectionIndex, imageIndex) => {
+        // Sécurité supplémentaire : on ne fait rien si mobile
+        if (!isDesktop) return;
         setActiveSectionIndex(sectionIndex);
         setActiveImageIndex(imageIndex);
         setIsOpen(true);
@@ -133,7 +157,6 @@ function PhotographyGallery() {
                                 <h2>{section.title}</h2>
                                 <p>{section.subtitle}</p>
                             </div>
-                            {/*<span>{section.images.length} </span>*/}
                         </div>
 
                         <div className="gallery-grid">
@@ -141,7 +164,10 @@ function PhotographyGallery() {
                                 <div
                                     key={src + i}
                                     className="gallery-item"
-                                    onClick={() => openModal(sIdx, i)}
+                                    // onClick uniquement sur desktop
+                                    onClick={isDesktop ? () => openModal(sIdx, i) : undefined}
+                                    // cursor géré via style inline selon device
+                                    style={{ cursor: isDesktop ? "pointer" : "default" }}
                                 >
                                     <img src={src} alt={`${section.title} ${i + 1}`} />
                                 </div>
@@ -151,7 +177,8 @@ function PhotographyGallery() {
                 ))}
             </main>
 
-            {isOpen && (
+            {/* Modal uniquement disponible sur desktop */}
+            {isDesktop && isOpen && (
                 <div className="modal">
                     <div className="modal-content">
                         <button className="close-btn" onClick={closeModal}>

@@ -4,8 +4,8 @@ import Navbar2 from "../Layout/Navbar2";
 import Footer from "../Layout/Footer";
 import NavbarMenuMobile from "../Layout/NavbarMenuMobile";
 
-import video_boucle_banner from "../MyVideos/z_banner40 (quality 40MB).mp4";
-import video_boucle_banner_mobile from "../MyVideos/Banner_Site_ boucle (Mobile 10).mp4";
+import video_boucle_banner from "../../src/MyVideos/z_banner40 (quality 19MB).mp4";
+import video_boucle_banner_mobile from "../../src/MyVideos/Banner_Site_ boucle (Mobile 21MB).mp4";
 
 import { Link } from "react-scroll";
 import React, { useState, useEffect } from "react";
@@ -14,8 +14,8 @@ import PageLoader from "../Components/PageLoader";
 import RequestAQuoteModal from "../Components/Modal/RequestAQuoteModal";
 import RequestAQuote from "../Components/RequestAQuote";
 
-import video_drone from "../MyVideos/DRONE_SHOT_VIDEO.mp4";
-import video_drone_mobile from "../MyVideos/DRONE_SHOT_VIDEO (Mobile).mp4";
+import video_drone from "../../src/MyVideos/DRONE_SHOT_VIDEO_correct.mp4";
+import video_drone_mobile from "../../src/MyVideos/DRONE_SHOT_VIDEO (Mobile 16 MB).mp4";
 
 import ArchiveVideoReel from "../Layout/ArchiveVideoReel";
 import PhotographyGallery from "../Components/PhotographyGallery";

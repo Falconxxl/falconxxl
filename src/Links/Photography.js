@@ -5,8 +5,8 @@ import Footer from "../Layout/Footer";
 import NavbarMenuMobile from "../Layout/NavbarMenuMobile";
 import Navbar2 from "../Layout/Navbar2";
 
-import desktop_banner_photograhy from "../Images/background_Brenda_blue2.png";
-import mobile_banner from "../Images/background_Brenda_blue_mobile4.png";
+import desktop_banner_photograhy from "../Images/background_Brenda_blue2.jpg";
+import mobile_banner from "../Images/background_Brenda_blue_mobile4.jpg";
 
 import batemburgpic from "../Images/Batemburg_photography_models";
 import mike_direction_photo from "../Images/mike_photography_model2";
@@ -35,7 +35,7 @@ function Photography() {
         // images lourdes → petit délai pour un rendu fluide
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 700);
+        }, 1000);
 
         return () => clearTimeout(timer);
     }, []);

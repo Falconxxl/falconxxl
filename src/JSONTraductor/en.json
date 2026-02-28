@@ -18,7 +18,7 @@
       "Webdesign": "Webdesign",
       "Branding": "Branding",
       "Digital Marketing": "Digital Marketing",
-      "Music Production": "Music Production",
+      "Music Production": "Music",
       "Music": "Music"
     }
   },
@@ -1041,7 +1041,7 @@
       "ContentLine4b": "Building complete digital products by combining strategy, usability, and visual design."
     },
     "Novi": {
-      "Title": "Mike giving direction during a shoot\nThe Novi University (Utrecht, The Netherlands)",
+      "Title": "The Novi University (Utrecht, The Netherlands)",
       "Content": "Certified in Front-End Development from The Novi University, Where he learned to build modern, high-performance web applications, especiallySingle Page Applications (SPA).",
       "ContentLine1a": "React: ",
       "ContentLine1b": "Building dynamic user interfaces and component-based applications.",

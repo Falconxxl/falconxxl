@@ -8,15 +8,13 @@ import Footer from "../Layout/Footer";
 import NavbarMenuMobile from "../Layout/NavbarMenuMobile";
 import OurWorkflow from "../Layout/OurWorkflow";
 
-
-import video_drone from "../MyVideos/DRONE_SHOT_VIDEO.mp4";
-import video_drone_mobile from "../MyVideos/DRONE_SHOT_VIDEO (Mobile).mp4";
+import video_drone from "../../src/MyVideos/DRONE_SHOT_VIDEO_correct.mp4";
+import video_drone_mobile from "../../src/MyVideos/DRONE_SHOT_VIDEO (Mobile 16 MB).mp4";
 
 import React, { useState, useEffect } from "react";
 import PageLoader from "../Components/PageLoader";
 import RequestAQuoteModal from "../Components/Modal/RequestAQuoteModal";
 import RequestAQuote from "../Components/RequestAQuote";
-
 
 import Michea_pic_about from "../Images/michael_pic1.png";
 // import mike_direction_photo from "../Images/mike_photography_model2";
@@ -282,8 +280,6 @@ function About() {
                 {/*<h1 className="text-try">{t("about")}</h1>*/}
                 {/*<LanguageSwitcher/>*/}
                 <NavbarMenu/>
-
-
 
                 {/*<div className="text-try">*/}
                 {/*    {t("welcome").split("\n").map((line, index) => (*/}

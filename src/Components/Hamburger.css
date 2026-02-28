@@ -120,6 +120,12 @@ body {
 @media screen and (max-width:940px) {
 
 
+    .dropdown-container {
+        z-index: 2100; /* au-dessus de l'overlay à 1999 */
+        position: relative;
+    }
+
+
     .Container-TestTwo {
         /*width: 100%;*/
         /*height: 80vh;*/
@@ -156,10 +162,10 @@ body {
     /* Menu plein écran */
     .menu {
         position: fixed;
-        top: 5px;
-        left: -70%;
-        height: 100vh;
-        width: 70%;
+        top: 0px;
+        left: -100%;
+        height: 200vh;
+        width: 100%;
         background: #f9c74a; /* blanc */
         color: #111;
         display: flex;
@@ -170,7 +176,7 @@ body {
         font-family: 'Montserrat', sans-serif;
         margin-top: 100px;
         /*z-index: 1200;*/
-        z-index: 500;   /* derrière la navbar */
+        z-index: -20;   /* derrière la navbar */
         /*top: 12vh;*/
         /*height: calc(100vh - 12vh);*/
     }
@@ -234,15 +240,17 @@ body {
         transition: max-height 0.4s ease-in-out;
         background: #1c1c1c;
         color: white;
-        /*height: 40vh;*/
+        height: 35vh;
+    }
+
+    .submenu li:first-child {
+        margin-top: 15px;
     }
 
     .submenu.open {
         max-height: 400px;
         padding-bottom: 5px;
     }
-
-
 
     .Submenu-button-hamburger {
         padding: 10px 40px; /* indenté par rapport au menu principal */
@@ -254,7 +262,6 @@ body {
         /*display: flex;*/
         /*justify-content: center;*/
         /*align-items: center;*/
-
     }
 
     .submenu li:hover {
@@ -262,14 +269,25 @@ body {
         /*background: #e0e0e0;*/
     }
 
+    /*.menu-overlay {*/
+    /*    position: fixed;*/
+    /*    top: 0;*/
+    /*    left: 70%;           !* commence là où le menu s’arrête *!*/
+    /*    width: 30%;*/
+    /*    height: 100vh;*/
+    /*    background: rgba(0, 0, 0, 0.0); !* totalement transparent *!*/
+    /*    z-index: 1999;*/
+    /*}*/
+
     .menu-overlay {
         position: fixed;
         top: 0;
-        left: 70%;           /* commence là où le menu s’arrête */
+        left: 70%;
         width: 30%;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.0); /* totalement transparent */
+        background: rgba(0, 0, 0, 0.0);
         z-index: 1999;
+        pointer-events: none; /* ← ne capte plus les clics */
     }
 
 

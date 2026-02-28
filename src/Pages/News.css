@@ -73,7 +73,7 @@
     width: 100%;
     height: 700px;
 
-    background-image: url("../Images/who-got-bars.png");
+    background-image: url("../Images/who-got-bars2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -202,7 +202,7 @@
     width: 100%;
     height: 700px;
 
-    background-image: url("../Images/Relook_ton_Business2");
+    background-image: url("../Images/Relook_ton_Business2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -348,7 +348,7 @@
             height: 900px;
             border-radius: 30px;
 
-            background-image: url("../Images/who-got-bars-mobile3.png");
+            background-image: url("../Images/who-got-bars-mobile3.jpg");
             background-position: center;
     }
 
@@ -419,9 +419,7 @@
         height: 900px;
         border-radius: 30px;
 
-        background-image: url("../Images/Relook_ton_Business_mobile");
+        background-image: url("../Images/Relook_ton_Business_mobile.jpg");
         background-position: center;
     }
-
-
 }

@@ -19,7 +19,7 @@
       "Webdesign": "Web Design",
       "Branding": "Branding",
       "Digital Marketing": "Digital Marketing",
-      "Music Production": "Production Musicale",
+      "Music Production": "Musique",
       "Music": "Musique"
     }
   },
@@ -967,9 +967,6 @@
         }
       },
 
-
-
-
       "VocalRecording": {
         "Title": "2. Packs d’Enregistrement Vocal",
 
@@ -1078,7 +1075,6 @@
     "Button5": "Tarifs Marketing Digital",
     "Button6": "Tarifs Production Musicale"
   },
-
 
   "RequestQuote": {
     "BigTitle1": "Une question ?",
@@ -1200,7 +1196,7 @@
     },
 
     "Novi": {
-      "Title": "Mike donnant des instructions lors d’un tournage\nUniversité Novi (Utrecht, Pays-Bas)",
+      "Title": "Université Novi (Utrecht, Pays-Bas)",
       "Content": "Certifié en développement Front-End à l’Université Novi, où il a appris à créer des applications web modernes et performantes, notamment des Single Page Applications (SPA).",
       "ContentLine1a": "React : ",
       "ContentLine1b": "Création d’interfaces dynamiques et d’applications basées sur des composants.",

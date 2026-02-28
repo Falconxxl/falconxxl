@@ -3,8 +3,8 @@ import NavbarMenu from "../Layout/NavbarMenu";
 import Navbar2 from "../Layout/Navbar2";
 import Footer from "../Layout/Footer";
 
-import desktop_banner_photograhy from "../Images/background_digital_marketing5d.png";
-import mobile_banner from "../Images/background_Brenda_blue_mobile6d.png";
+import desktop_banner_photograhy from "../Images/background_digital_marketing5d.jpg";
+import mobile_banner from "../Images/background_Brenda_blue_mobile6d.jpg";
 
 import {Link} from "react-scroll";
 import React, { useState } from "react";

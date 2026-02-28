@@ -5,8 +5,8 @@ import Navbar2 from "../Layout/Navbar2";
 import NavbarMenuMobile from "../Layout/NavbarMenuMobile";
 import Footer from "../Layout/Footer";
 
-import desktop_banner_photograhy from "../Images/background_webdesign6.png";
-import mobile_banner from "../Images/background_Brenda_blue_mobile6.png";
+import desktop_banner_photograhy from "../Images/background_webdesign6.jpg";
+import mobile_banner from "../Images/background_Brenda_blue_mobile6.jpg";
 import compo_webdesign_laptop1 from "../Images/compo_laptop1a_webdesign.png";
 import compo_webdesign_laptop2 from "../Images/compo_laptop2b_webdesign.png";
 import compo_webdesign_laptop3 from "../Images/compo_laptop3a_webdesign.png";
@@ -33,7 +33,7 @@ function Webdesign() {
         // images lourdes → petit délai pour rendu fluide
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 700);
+        }, 800);
 
         return () => clearTimeout(timer);
     }, []);

@@ -5,12 +5,13 @@ import Navbar2 from "../Layout/Navbar2";
 import NavbarMenuMobile from "../Layout/NavbarMenuMobile";
 import Footer from "../Layout/Footer";
 
-import desktop_banner_music from "../Images/background_banner_music5.png";
-import mobile_banner from "../Images/background_Brenda_blue_mobile8af.png";
+import desktop_banner_music from "../Images/background_banner_music5.jpg";
+import mobile_banner from "../Images/background_Brenda_blue_mobile8af.jpg";
 
 import {Link} from "react-scroll";
 import { useTranslation } from "react-i18next";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import PageLoader from "../Components/PageLoader";
 
 import TypeMusic from "../Layout/TypeMusic";
 import OurWorkflow from "../Layout/OurWorkflow";
@@ -21,15 +22,29 @@ import RequestAQuote from "../Components/RequestAQuote";
 import WhatsappFunction from "../Components/WhatsappFunction";
 
 
-
 function Music() {
 
     const { t } = useTranslation();
 
     const [openQuote, setOpenQuote] = useState(false);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        // images lourdes → petit délai pour rendu fluide
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 600);
+
+        return () => clearTimeout(timer);
+    }, []);
+
 
     return (
-        <div>
+
+        <>
+            {loading && <PageLoader />}
+
+    <div>
             <NavbarMenu/>
             <NavbarMenuMobile/>
             <Navbar2/>
@@ -182,6 +197,8 @@ function Music() {
             <WhatsappFunction/>
             <Footer/>
         </div>
+
+      </>
     );
 }
 

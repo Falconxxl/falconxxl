@@ -1,21 +1,27 @@
 import './News.css';
 import NavbarMenu from "../Layout/NavbarMenu";
-// import TopButton from "../Components/TopButton";
+
 import Navbar2 from "../Layout/Navbar2";
 import Footer from "../Layout/Footer";
 import NavbarMenuMobile from "../Layout/NavbarMenuMobile";
 import React, {useEffect, useState} from "react";
 import WhatsappFunction from "../Components/WhatsappFunction";
+
 // import video_drone from "../MyVideos/DRONE_SHOT_VIDEO.mp4";
 // import video_drone_mobile from "../MyVideos/DRONE_SHOT_VIDEO (Mobile).mp4";
+
 import { useTranslation } from "react-i18next";
 import Ads from "../Layout/Ads";
-import video_boucle_banner from "../MyVideos/z_banner40 (quality 40MB).mp4";
-import video_boucle_banner_mobile from "../MyVideos/Banner_Site_ boucle (Mobile 10).mp4";
+
+import video_boucle_banner from "../MyVideos/z_banner40 (quality 40MB correct news).mp4";
+import video_boucle_banner_mobile from "../MyVideos/Banner_Site_ boucle (Mobile 10) correct news.mp4";
+
 import RequestAQuoteModal from "../Components/Modal/RequestAQuoteModal";
 import RequestAQuote from "../Components/RequestAQuote";
+
 // import gotflow from "../Images/who-got-bars.png";
 // import gotflow_mobile from "../Images/who-got-bars-mobile2.png";
+
 import sozacom from "../Images/sozacom4.png";
 import PageLoader from "../Components/PageLoader";
 import NewsPartnership from "../Layout/Newspartnership";
