@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import './Photography.css';
 
 import NavbarMenu from "../Layout/NavbarMenu";
@@ -42,6 +43,12 @@ function Photography() {
 
     return (
         <>
+            <Helmet>
+                <title>{t("HelmetSEO.Photography.title")}</title>
+                <meta name="description" content={t("HelmetSEO.Photography.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/Photography" />
+            </Helmet>
+
             {loading && <PageLoader />}
 
             <div className={`photography-wrapper ${loading ? "hidden" : "visible"}`}>

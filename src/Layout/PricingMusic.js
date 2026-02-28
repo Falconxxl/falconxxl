@@ -5,7 +5,6 @@ import RequestAQuote from "../Components/RequestAQuote";
 import { useTranslation } from "react-i18next";
 
 
-
 function PricingMusic() {
 
     const { t } = useTranslation();
@@ -13,7 +12,10 @@ function PricingMusic() {
     const [openQuote, setOpenQuote] = useState(false);
 
     return (
-        <div>
+        <>
+
+
+         <div>
 
             {/*-------------Beat packages-----------------------------------*/}
 
@@ -398,6 +400,8 @@ function PricingMusic() {
             </div>
 
         </div>
+
+        </>
     );
 }
 

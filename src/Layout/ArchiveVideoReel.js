@@ -25,7 +25,10 @@ function ArchiveVideoReel() {
 
 
     return (
-        <section className="video-session">
+
+        <>
+
+    <section className="video-session">
             <h1>{t("ArchiveVideoReel.Title")}</h1>
             <p>
                 {t("ArchiveVideoReel.Content")}
@@ -40,6 +43,8 @@ function ArchiveVideoReel() {
                 ></iframe>
             </div>
         </section>
+
+        </>
     );
 }
 

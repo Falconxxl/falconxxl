@@ -1,3 +1,5 @@
+
+import { Helmet } from 'react-helmet-async';
 import './About.css';
 import NavbarMenu from "../Layout/NavbarMenu";
 
@@ -41,7 +43,15 @@ function About() {
     }, []);
 
     return (
-        <div>
+
+        <>
+            <Helmet>
+                <title>{t("HelmetSEO.About.title")}</title>
+                <meta name="description" content={t("HelmetSEO.About.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/About" />
+            </Helmet>
+
+            <div>
             {loading && <PageLoader />}
             <div className={`about-wrapper ${loading ? "hidden" : "visible"}`}>
                 <NavbarMenu/>
@@ -306,6 +316,8 @@ function About() {
             </div>
 
         </div>
+
+        </>
     );
 }
 

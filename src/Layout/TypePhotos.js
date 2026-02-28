@@ -7,7 +7,10 @@ function TypePhotos() {
     const { t } = useTranslation();
 
     return (
-        <div className="Container-WhyUs">
+
+        <>
+
+           <div className="Container-WhyUs">
 
             <div className="Container-WhyUs-left">
                 <h1>
@@ -220,6 +223,9 @@ function TypePhotos() {
             </div>
 
         </div>
+
+        </>
+
     );
 }
 

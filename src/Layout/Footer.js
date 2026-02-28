@@ -13,9 +13,11 @@ function Footer() {
     const [openQuote, setOpenQuote] = useState(false);
 
     return (
-        <div className="Container-Footer">
-            <div className="Container-Footer-content1">
 
+        <>
+
+          <div className="Container-Footer">
+            <div className="Container-Footer-content1">
                 <div className="Container-Footer-logoSlogan">
                     <img src={logo_footer} alt="flaconXXL-logo" className="logo-falcon-Footer"/>
 
@@ -245,6 +247,7 @@ function Footer() {
                 </p>
             </div>
         </div>
+      </>
     );
 }
 

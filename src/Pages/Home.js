@@ -1,4 +1,5 @@
 import './Home.css';
+import { Helmet } from 'react-helmet-async';
 import Navbar2 from "../Layout/Navbar2";
 import Footer from "../Layout/Footer";
 import NavbarMenu from "../Layout/NavbarMenu";
@@ -34,6 +35,12 @@ function Home() {
 
     return (
         <>
+            <Helmet>
+                <title>{t("HelmetSEO.Home.title")}</title>
+                <meta name="description" content={t("HelmetSEO.Home.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/" />
+            </Helmet>
+
             {loading && <PageLoader />}
 
             <div className={`home-wrapper ${loading ? "hidden" : "visible"}`}>

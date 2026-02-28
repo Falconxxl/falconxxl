@@ -5,7 +5,6 @@ import React, {useState} from "react";
 
 import Modal1 from "../Components/Modal/Modal1";
 import icon_film from "../Images/icon_film2.png";
-import {NavLink} from "react-router-dom";
 import Wedding_home from "../Images/mike_brenda_home.png";
 
 
@@ -16,7 +15,9 @@ function ServiceHome2() {
 
     return (
 
-    <div className="Container-ServiceHome-single">
+        <>
+
+        <div className="Container-ServiceHome-single">
 
         <div className="text-Container-ServiceHome-single">
             <h3>
@@ -43,6 +44,8 @@ function ServiceHome2() {
         </div >
 
     </div>
+
+    </>
 
     );
 }

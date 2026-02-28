@@ -8,7 +8,10 @@ function Navbar2() {
     const { t } = useTranslation();
 
     return (
-        <div className="Container-Navbar2">
+
+        <>
+
+          <div className="Container-Navbar2">
             <ul className='Container-buttons-Navbar2'>
 
                 <li>
@@ -37,7 +40,10 @@ function Navbar2() {
 
             </ul>
         </div>
-    );
+
+     </>
+
+);
 }
 
 export default Navbar2;

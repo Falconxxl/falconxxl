@@ -6,7 +6,10 @@ function TypeVideos() {
     const { t } = useTranslation();
 
     return (
-        <div className="Container-WhyUs">
+
+        <>
+
+           <div className="Container-WhyUs">
 
             <div className="Container-WhyUs-left">
                 <h1>
@@ -180,6 +183,8 @@ function TypeVideos() {
             </div>
 
         </div>
+        </>
+
     );
 }
 

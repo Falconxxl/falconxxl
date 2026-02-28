@@ -14,7 +14,10 @@ function NavbarMenu() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className="Navbar-mobile">
+
+        <>
+
+         <div className="Navbar-mobile">
             <div className="Container-NavbarMenuMobile">
 
                 <div className="container-languages">
@@ -37,6 +40,8 @@ function NavbarMenu() {
 
             </div>
         </div>
+
+        </>
     );
 }
 

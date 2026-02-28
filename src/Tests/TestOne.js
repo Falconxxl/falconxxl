@@ -11,7 +11,9 @@ function TestOne() {
     };
 
     return (
-        <div style={{ padding: "20px" }}>
+        <>
+
+            <div style={{ padding: "20px" }}>
             <h2>{t("welcome")}</h2>
 
             <label htmlFor="lang">{t("language")}:</label>
@@ -27,6 +29,8 @@ function TestOne() {
             </select>
             <TopButton/>
         </div>
+
+      </>
     );
 }
 

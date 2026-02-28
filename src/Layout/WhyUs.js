@@ -7,7 +7,10 @@ function WhyUs() {
     const { t } = useTranslation();
 
     return (
-        <div className="Container-WhyUs">
+
+        <>
+
+           <div className="Container-WhyUs">
 
             <div className="Container-WhyUs-left">
                 <h1>
@@ -153,6 +156,8 @@ function WhyUs() {
             </div>
 
         </div>
+
+      </>
     );
 }
 

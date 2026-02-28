@@ -9,7 +9,10 @@ function TesstFxTranslate() {
     const { t } = useTranslation();
 
     return (
-        <div>
+
+        <>
+
+         <div>
             <NavbarMenu/>
             <NavbarMenuMobile/>
             <div className="container-test"></div>
@@ -46,6 +49,8 @@ function TesstFxTranslate() {
                 ))}
             </div>
         </div>
+
+        </>
     );
 }
 

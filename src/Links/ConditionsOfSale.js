@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import './ConditionsOfSale.css';
 import NavbarMenu from "../Layout/NavbarMenu";
 import TopButton from "../Components/TopButton";
@@ -5,10 +6,21 @@ import Navbar2 from "../Layout/Navbar2";
 import NavbarMenuMobile from "../Layout/NavbarMenuMobile";
 import Footer from "../Layout/Footer";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function ConditionsOfSale() {
+
+    const { t } = useTranslation();
     return (
-        <div >
+
+        <>
+            <Helmet>
+                <title>{t("HelmetSEO.ConditionsOfSale.title")}</title>
+                <meta name="description" content={t("HelmetSEO.ConditionsOfSale.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/ConditionsOfSale"/>
+            </Helmet>
+
+    <div >
             <NavbarMenu/>
             <NavbarMenuMobile/>
             <Navbar2/>
@@ -29,6 +41,8 @@ function ConditionsOfSale() {
             <TopButton/>
             <Footer/>
         </div>
+
+        </>
     );
 }
 

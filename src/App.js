@@ -24,7 +24,6 @@ import ScrollToTop from "./Components/ScrollToTop";
 import Collaboration from "./Pages/Collaboration/Collaboration";
 
 
-
 function App() {
   return (
       <>

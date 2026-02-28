@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import './Faq.css';
 import NavbarMenu from "../Layout/NavbarMenu";
 import TopButton from "../Components/TopButton";
@@ -5,10 +6,22 @@ import Navbar2 from "../Layout/Navbar2";
 import NavbarMenuMobile from "../Layout/NavbarMenuMobile";
 import Footer from "../Layout/Footer";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Faq() {
+
+    const { t } = useTranslation();
+
     return (
-        <div >
+
+        <>
+            <Helmet>
+                <title>{t("HelmetSEO.ContactUs.title")}</title>
+                <meta name="description" content={t("HelmetSEO.ContactUs.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/ContactUs" />
+            </Helmet>
+
+            <div >
             <NavbarMenu/>
             <NavbarMenuMobile/>
             <Navbar2/>
@@ -29,6 +42,8 @@ function Faq() {
             <TopButton/>
             <Footer/>
         </div>
+
+</>
     );
 }
 

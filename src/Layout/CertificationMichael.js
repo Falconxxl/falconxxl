@@ -12,8 +12,9 @@ function CertificationMichael() {
 
     return (
 
+        <>
 
-        <div className="Container-WhyUs" style={{backgroundColor:"white"}}>
+         <div className="Container-WhyUs" style={{backgroundColor:"white"}}>
 
             <div className="Container-WhyUs-left">
                 <h1 style={{color:"black"}}>{t("Certification.BigTitle")}</h1>
@@ -225,6 +226,8 @@ function CertificationMichael() {
             </div>
 
         </div>
+
+      </>
 
     );
 }

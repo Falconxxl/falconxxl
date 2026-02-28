@@ -6,7 +6,10 @@ function TypeMusic() {
     const { t } = useTranslation();
 
     return (
-        <div className="Container-WhyUs">
+
+        <>
+
+         <div className="Container-WhyUs">
 
             <div className="Container-WhyUs-left">
                 <h1>{t("MusicPage.TypeVideo.BigTitle")}</h1>
@@ -144,6 +147,8 @@ function TypeMusic() {
             </div>
 
         </div>
+
+        </>
     );
 }
 

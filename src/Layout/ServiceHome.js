@@ -15,8 +15,6 @@ import Modal1 from "../Components/Modal/Modal1";
 import { useTranslation } from "react-i18next";
 
 
-
-
 function ServiceHome () {
 
     const { t } = useTranslation();
@@ -25,7 +23,10 @@ function ServiceHome () {
 
 
     return (
-        <div className="Container-ServiceHome">
+
+        <>
+
+         <div className="Container-ServiceHome">
 
             <h1 className="title-ServiceHome">
                 {t("ServiceHomeExplore.BigTitleLine1")}
@@ -170,6 +171,7 @@ function ServiceHome () {
             </div>
 
         </div>
+        </>
 
     );
 }

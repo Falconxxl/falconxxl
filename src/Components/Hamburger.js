@@ -12,7 +12,10 @@ function Hamburger() {
     const [servicesOpen, setServicesOpen] = useState(false);
 
     return (
-        <div className="navbar-hamburger">
+
+        <>
+
+    <div className="navbar-hamburger">
             <button
                 className="menu-icon"
                 onClick={() => setMenuOpen(!menuOpen)}
@@ -122,6 +125,8 @@ function Hamburger() {
                 </ul>
             </nav>
         </div>
+
+        </>
     );
 }
 

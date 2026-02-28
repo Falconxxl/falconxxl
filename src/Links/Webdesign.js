@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import './Webdesign.css';
 import NavbarMenu from "../Layout/NavbarMenu";
 
@@ -40,6 +41,12 @@ function Webdesign() {
 
     return (
         <>
+            <Helmet>
+                <title>{t("HelmetSEO.Webdesign.title")}</title>
+                <meta name="description" content={t("HelmetSEO.Webdesign.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/Webdesign" />
+            </Helmet>
+
             {loading && <PageLoader />}
 
             <div className={`webdesign-wrapper ${loading ? "hidden" : "visible"}`}>

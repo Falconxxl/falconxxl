@@ -12,6 +12,8 @@ function PricingPhotography() {
     const [openQuote, setOpenQuote] = useState(false);
 
     return (
+
+        <>
         <div className="Container-PricingVideo">
             <h1>{t("PricingPhotography.BigTitle")}</h1>
             <div className="Container-PricingVideo-wrapper">
@@ -128,6 +130,7 @@ function PricingPhotography() {
 
             </div>
         </div>
+        </>
     );
 }
 

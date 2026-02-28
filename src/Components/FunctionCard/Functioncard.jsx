@@ -11,6 +11,9 @@ const FunctionCard = ({ role }) => {
     const whatsappUrl = `https://wa.me/${role.whatsapp}?text=Bonjour%20FalconXXL%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le%20r%C3%B4le%20%3A%20${encodeURIComponent(role.title)}`;
 
     return (
+
+        <>
+
         <div className="function-card">
             <div className="function-card__img-wrapper">
                 <img
@@ -61,6 +64,8 @@ const FunctionCard = ({ role }) => {
                 </div>
             </div>
         </div>
+
+        </>
     );
 };
 

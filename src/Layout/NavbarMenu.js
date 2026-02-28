@@ -1,3 +1,4 @@
+
 import './NavbarMenu.css';
 import {NavLink} from "react-router-dom";
 import logo from '../Assets/2.Logo_Falcon_XX_4_jaune.png';
@@ -29,7 +30,11 @@ function NavbarMenu() {
     // --------------------------------------------------------------
 
     return (
-        <div className="Navbar1">
+
+        <>
+
+          <div className="Navbar1">
+
             <div className="Container-NavbarMenu">
 
                 <NavLink
@@ -140,6 +145,8 @@ function NavbarMenu() {
             </div>
 
         </div>
+
+        </>
     );
 }
 

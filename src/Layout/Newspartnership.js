@@ -32,7 +32,10 @@ const NewsPartnership = () => {
     const { t } = useTranslation();
 
     return (
-        <section
+
+        <>
+
+         <section
             className="np-section"
             style={{ backgroundImage: `url(${banner_news})` }}
         >
@@ -120,6 +123,7 @@ const NewsPartnership = () => {
 
             </div>
         </section>
+        </>
     );
 };
 

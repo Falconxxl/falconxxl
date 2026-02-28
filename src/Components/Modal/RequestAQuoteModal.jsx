@@ -6,7 +6,10 @@ const RequestAQuoteModal = ({ open, onClose, children }) => {
     if (!open) return null;
 
     return ReactDOM.createPortal(
-        <div
+
+        <>
+
+            <div
             style={{
                 position: "fixed",
                 inset: 0,
@@ -32,6 +35,8 @@ const RequestAQuoteModal = ({ open, onClose, children }) => {
             </div>
         </div>,
         document.body
+
+        </>
     );
 };
 

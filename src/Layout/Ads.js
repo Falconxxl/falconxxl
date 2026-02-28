@@ -49,7 +49,10 @@ const Ads = () => {
     }, []);
 
     return (
-        <section className="ads-section" ref={sectionRef}>
+
+        <>
+
+    <section className="ads-section" ref={sectionRef}>
             <div className="ads-container">
 
                 {/* ── DIV GAUCHE : Image ────────────────────────────── */}
@@ -124,6 +127,8 @@ const Ads = () => {
                 </div>
             </div>
         </section>
+      </>
+
     );
 };
 

@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import './Music.css';
 
 import NavbarMenu from "../Layout/NavbarMenu";
@@ -42,6 +43,12 @@ function Music() {
     return (
 
         <>
+            <Helmet>
+                <title>{t("HelmetSEO.Music.title")}</title>
+                <meta name="description" content={t("HelmetSEO.Music.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/Music" />
+            </Helmet>
+
             {loading && <PageLoader />}
 
     <div>

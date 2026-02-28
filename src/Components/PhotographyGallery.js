@@ -144,7 +144,10 @@ function PhotographyGallery() {
     };
 
     return (
-        <div className="photography-container">
+
+        <>
+
+          <div className="photography-container">
             <header className="photography-header">
                 <h1>{t("PhotographyGallery.BigTitle")}</h1>
             </header>
@@ -210,6 +213,8 @@ function PhotographyGallery() {
                 </div>
             )}
         </div>
+
+        </>
     );
 }
 

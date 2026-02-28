@@ -1,4 +1,6 @@
 // 📁 src/pages/Collaboration/Collaboration.jsx
+
+import { Helmet } from 'react-helmet-async';
 import React from "react";
 import ButtonCategory from "../../Components/ButtonCategory/Buttoncategory";
 import Categories from "../../Data/Categories"; // Utilisation du default export corrigé
@@ -13,7 +15,14 @@ import "./Collaboration.css";
  */
 const Collaboration = ({ onSelectCategory }) => {
     return (
-        <div className="collab" style={{ backgroundImage: `url(${heroBg})` }}>
+        <>
+            <Helmet>
+                <title>Falcon XXL — Studio Créatif | Audiovisuel, Photo, Web & Music</title>
+                <meta name="description" content="Falcon XXL est un studio créatif basé aux Pays-Bas. Audiovisuel, photographie, webdesign, branding, marketing digital et production musicale. Disponible en Europe et Afrique francophone." />
+                <link rel="canonical" href="https://www.falconxxl.com/" />
+            </Helmet>
+
+            <div className="collab" style={{ backgroundImage: `url(${heroBg})` }}>
             {/* ── Hero / Text section ── */}
             <section className="collab__hero">
                 <div className="collab__hero-content">
@@ -41,6 +50,8 @@ const Collaboration = ({ onSelectCategory }) => {
                 </div>
             </section>
         </div>
+
+        </>
     );
 };
 

@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import './News.css';
 import NavbarMenu from "../Layout/NavbarMenu";
 
@@ -43,9 +44,17 @@ function News() {
     }, []);
 
     return (
-        <div >
+
+        <>
+            <Helmet>
+                <title>{t("HelmetSEO.News.title")}</title>
+                <meta name="description" content={t("HelmetSEO.News.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/News" />
+            </Helmet>
 
             {loading && <PageLoader />}
+
+    <div >
             <NavbarMenu/>
             <NavbarMenuMobile/>
             <Navbar2/>
@@ -221,6 +230,8 @@ function News() {
             <WhatsappFunction/>
             <Footer/>
         </div>
+
+        </>
     );
 }
 

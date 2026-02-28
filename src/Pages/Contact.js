@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import './Contact.css';
 import NavbarMenu from "../Layout/NavbarMenu";
 import Navbar2 from "../Layout/Navbar2";
@@ -97,7 +98,14 @@ function Contact() {
 
 
     return (
-        <div>
+        <>
+            <Helmet>
+                <title>{t("HelmetSEO.Contact.title")}</title>
+                <meta name="description" content={t("HelmetSEO.Contact.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/Contact" />
+            </Helmet>
+
+    <div>
             <NavbarMenu/>
             <NavbarMenuMobile/>
             <Navbar2/>
@@ -293,6 +301,8 @@ function Contact() {
             <WhatsappFunction/>
             <Footer/>
         </div>
+
+        </>
     );
 }
 

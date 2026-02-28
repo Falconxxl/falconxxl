@@ -76,6 +76,10 @@ function Music() {
     const [openModali, setOpenModali] = useState(false);
 
     return (
+
+
+        <>
+
         <div>
 
             <Navbar4/>
@@ -661,6 +665,8 @@ function Music() {
             <Footer2/>
 
         </div>
+
+        </>
     );
 }
 

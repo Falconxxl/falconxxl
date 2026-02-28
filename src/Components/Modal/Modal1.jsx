@@ -59,7 +59,9 @@ const Modal1 = ({ open, onClose }) => {
     };
 
     return (
-        <div className='overlay' onClick={onClose}>
+
+        <>
+            <div className='overlay' onClick={onClose}>
             <div className='modalContainer' onClick={e => e.stopPropagation()}>
 
                 {/* Bouton fermer */}
@@ -135,6 +137,8 @@ const Modal1 = ({ open, onClose }) => {
                 </div>
             </div>
         </div>
+
+     </>
     );
 };
 

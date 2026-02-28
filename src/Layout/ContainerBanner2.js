@@ -30,6 +30,7 @@ function ContainerBanner2() {
 
         <>
             {loading && <PageLoader />}
+
         <header className="hero-banner">
             {/* Image desktop */}
             <img src={desktop_banner1} alt="Banner desktop" className="hero-image desktop-image" />

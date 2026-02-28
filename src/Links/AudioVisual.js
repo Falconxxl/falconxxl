@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import './AudioVisual.css';
 
 import video_boucle_banner from "../../src/MyVideos/z_banner40 (quality 19MB).mp4";
@@ -44,7 +45,13 @@ function AudioVisual() {
 
     return (
         <>
-            {loading && <PageLoader />}
+            <Helmet>
+                <title>{t("HelmetSEO.AudioVisual.title")}</title>
+                <meta name="description" content={t("HelmetSEO.AudioVisual.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/AudioVisual" />
+            </Helmet>
+
+                {loading && <PageLoader />}
 
             <div className={`audiovisual-wrapper ${loading ? "hidden" : "visible"}`}>
                 <NavbarMenu/>

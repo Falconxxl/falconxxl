@@ -12,7 +12,10 @@ function PricingDigitalMarketing() {
     const [openQuote, setOpenQuote] = useState(false);
 
     return (
-        <div className="Container-PricingVideo">
+
+        <>
+
+          <div className="Container-PricingVideo">
             <h1>
                 {t("DigitalMarketing.PricingDigitalMarketing.BigTitle")}
             </h1>
@@ -119,6 +122,8 @@ function PricingDigitalMarketing() {
                 </div>
             </div>
         </div>
+        </>
+
     );
 }
 

@@ -1,4 +1,5 @@
 // import React, { useState } from "react";
+import { Helmet } from 'react-helmet-async';
 import "./Prices.css";
 
 import NavbarMenu from "../Layout/NavbarMenu";
@@ -38,7 +39,15 @@ function Prices() {
     ];
 
     return (
-        <div>
+
+        <>
+            <Helmet>
+                <title>{t("HelmetSEO.Prices.title")}</title>
+                <meta name="description" content={t("HelmetSEO.Prices.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/Prices" />
+            </Helmet>
+
+    <div>
             <NavbarMenu />
             <NavbarMenuMobile />
             <Navbar2 />
@@ -98,6 +107,8 @@ function Prices() {
             <WhatsappFunction/>
             <Footer />
         </div>
+
+        </>
     );
 }
 

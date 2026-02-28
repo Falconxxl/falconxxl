@@ -33,7 +33,10 @@ function LanguageDropdown({ i18n }) {
     };
 
     return (
-        <div className="dropdown-container" ref={dropdownRef}>
+
+        <>
+
+    <div className="dropdown-container" ref={dropdownRef}>
             <div className="dropdown-selected" onClick={() => setOpen(!open)}>
                 {options.find((o) => o.value === selected)?.label}
             </div>
@@ -51,6 +54,8 @@ function LanguageDropdown({ i18n }) {
                 </ul>
             )}
         </div>
+
+        </>
     );
 }
 

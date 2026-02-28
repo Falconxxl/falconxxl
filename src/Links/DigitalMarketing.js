@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import './DigitalMarketing.css';
 import NavbarMenu from "../Layout/NavbarMenu";
 import Navbar2 from "../Layout/Navbar2";
@@ -25,7 +26,16 @@ function DigitalMarketing() {
     const [openQuote, setOpenQuote] = useState(false);
 
     return (
-        <div className="Container-DigitalMarketing">
+
+
+        <>
+            <Helmet>
+                <title>{t("HelmetSEO.DigitalMarketing.title")}</title>
+                <meta name="description" content={t("HelmetSEO.DigitalMarketing.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/DigitalMarketing" />
+            </Helmet>
+
+    <div className="Container-DigitalMarketing">
             <NavbarMenu/>
             <NavbarMenuMobile/>
             <Navbar2/>
@@ -566,6 +576,8 @@ function DigitalMarketing() {
             <WhatsappFunction/>
             <Footer/>
         </div>
+
+        </>
     );
 }
 

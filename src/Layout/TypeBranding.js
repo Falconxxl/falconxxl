@@ -6,7 +6,10 @@ function TypeBranding() {
     const { t } = useTranslation();
 
     return (
-        <div className="Container-WhyUs">
+
+        <>
+
+          <div className="Container-WhyUs">
 
             <div className="Container-WhyUs-left">
                 <h1>{t("Branding.TypeBranding.BigTitle")}</h1>
@@ -371,6 +374,8 @@ function TypeBranding() {
             </div>
 
         </div>
+
+        </>
     );
 }
 

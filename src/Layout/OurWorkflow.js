@@ -11,7 +11,9 @@ function OurWorkflow() {
     const { t } = useTranslation();
 
     return (
-        <div className="Container-OurWorkflow">
+
+        <>
+            <div className="Container-OurWorkflow">
             <h1>
                 {t("OurWorkflow.BigTitle")}
             </h1>
@@ -132,6 +134,7 @@ function OurWorkflow() {
                 </div>
             </div>
         </div>
+        </>
     );
 }
 

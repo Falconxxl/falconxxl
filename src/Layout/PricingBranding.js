@@ -5,8 +5,6 @@ import React, { useState } from "react";
 import RequestAQuoteModal from "../Components/Modal/RequestAQuoteModal";
 import RequestAQuote from "../Components/RequestAQuote";
 
-
-
 function PricingBranding() {
 
     const { t } = useTranslation();
@@ -14,10 +12,11 @@ function PricingBranding() {
     const [openQuote, setOpenQuote] = useState(false);
 
     return (
+        <>
+
         <div className="Container-PricingVideo">
             <h1>{t("Branding.PricingBranding.BigTitle")}</h1>
             <div className="Container-PricingVideo-wrapper">
-
 
                 {/*----------Basic Package----------------*/}
 
@@ -49,7 +48,6 @@ function PricingBranding() {
                 </div>
 
                 {/*----------Standard Package----------------*/}
-
 
                 <div className="PricingVideo-details-standard">
                     <h2>{t("Branding.PricingBranding.StandardPackage.Title")}</h2>
@@ -112,6 +110,8 @@ function PricingBranding() {
 
             </div>
         </div>
+        </>
+
     );
 }
 

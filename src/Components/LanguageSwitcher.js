@@ -14,7 +14,10 @@ const LanguageSwitcher = () => {
     };
 
     return (
-        <div style={{ position: "relative", display: "inline-block" }}>
+
+        <>
+
+            <div style={{ position: "relative", display: "inline-block" }}>
             <button
                 onClick={() => setOpen(!open)}
                 style={{
@@ -56,6 +59,9 @@ const LanguageSwitcher = () => {
                 </div>
             )}
         </div>
+       </>
+
+
     );
 };
 

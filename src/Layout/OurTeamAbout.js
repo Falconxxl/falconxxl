@@ -11,7 +11,10 @@ function OurTeamAbout() {
     const { t } = useTranslation();
 
     return (
-        <div className="Container-OurTeam">
+
+        <>
+
+          <div className="Container-OurTeam">
 
             <h1>{t("OurTeam.Title")} </h1>
 
@@ -46,6 +49,9 @@ function OurTeamAbout() {
                 </div>
             </div>
         </div>
+
+        </>
+
     );
 }
 

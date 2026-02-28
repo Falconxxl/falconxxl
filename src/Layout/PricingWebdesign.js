@@ -5,7 +5,6 @@ import RequestAQuote from "../Components/RequestAQuote";
 import { useTranslation } from "react-i18next";
 
 
-
 function PricingWebdesign() {
 
     const { t } = useTranslation();
@@ -13,8 +12,11 @@ function PricingWebdesign() {
     const [openQuote, setOpenQuote] = useState(false);
 
     return (
-        <div className="Container-PricingVideo"
-        >
+
+        <>
+
+        <div className="Container-PricingVideo">
+
             <h1>{t("PricingWebdesign.BigTitle")}</h1>
             <div className="Container-PricingVideo-wrapper">
 
@@ -123,6 +125,7 @@ function PricingWebdesign() {
 
             </div>
         </div>
+        </>
     );
 }
 

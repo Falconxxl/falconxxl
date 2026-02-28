@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import './PrivacyPolicy.css';
 
 import NavbarMenu from "../Layout/NavbarMenu";
@@ -14,7 +15,15 @@ function PrivacyPolicy() {
     const { t } = useTranslation();
 
     return (
-        <div >
+
+        <>
+            <Helmet>
+                <title>{t("HelmetSEO.PrivacyPolicy.title")}</title>
+                <meta name="description" content={t("HelmetSEO.PrivacyPolicy.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/PrivacyPolicy" />
+            </Helmet>
+
+    <div >
             <NavbarMenu/>
             <NavbarMenuMobile/>
             <Navbar2/>
@@ -100,6 +109,8 @@ function PrivacyPolicy() {
             <WhatsappFunction/>
             <Footer/>
         </div>
+
+        </>
     );
 }
 

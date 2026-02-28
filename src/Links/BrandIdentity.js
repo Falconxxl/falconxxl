@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import './BrandIdentity.css';
 import NavbarMenu from "../Layout/NavbarMenu";
 import Navbar2 from "../Layout/Navbar2";
@@ -47,6 +48,13 @@ function BrandIdentity() {
     return (
 
         <>
+
+            <Helmet>
+                <title>{t("HelmetSEO.BrandIdentity.title")}</title>
+                <meta name="description" content={t("HelmetSEO.BrandIdentity.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/BrandIdentity" />
+            </Helmet>
+
             {loading && <PageLoader />}
 
     <div>

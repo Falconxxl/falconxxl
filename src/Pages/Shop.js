@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import './Shop.css';
 import NavbarMenu from "../Layout/NavbarMenu";
 import Navbar2 from "../Layout/Navbar2";
@@ -5,10 +6,21 @@ import Footer from "../Layout/Footer";
 import NavbarMenuMobile from "../Layout/NavbarMenuMobile";
 import React from "react";
 import WhatsappFunction from "../Components/WhatsappFunction";
+import { useTranslation } from "react-i18next";
 
 function Shop() {
+
+    const { t } = useTranslation();
+
     return (
-        <div >
+        <>
+            <Helmet>
+                <title>{t("HelmetSEO.Shop.title")}</title>
+                <meta name="description" content={t("HelmetSEO.Shop.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/Shop" />
+            </Helmet>
+
+    <div >
             <NavbarMenu/>
             <NavbarMenuMobile/>
             <Navbar2/>
@@ -29,6 +41,8 @@ function Shop() {
             <WhatsappFunction/>
             <Footer/>
         </div>
+
+        </>
     );
 }
 

@@ -1,4 +1,91 @@
 {
+
+  "HelmetSEO": {
+    "Home": {
+      "title": "Falcon XXL — Creative Studio | Audiovisual, Photo, Web & Music",
+      "description": "Falcon XXL is a creative studio based in the Netherlands. Audiovisual, photography, webdesign, branding, digital marketing and music production. Available in Europe and French-speaking Africa."
+    },
+    "About": {
+      "title": "Falcon XXL — About Us | Our Story & Our Team",
+      "description": "Discover the story of Falcon XXL, a creative studio founded in the Netherlands. Our passionate team supports you in audiovisual, photo, webdesign and music across Europe and Africa."
+    },
+    "Contact": {
+      "title": "Falcon XXL — Contact Us | Quote & Information",
+      "description": "Contact Falcon XXL for a quote or any question. Creative studio based in the Netherlands, available for your projects in Europe and French-speaking Africa."
+    },
+    "News": {
+      "title": "Falcon XXL — News & Updates",
+      "description": "Follow the latest news from Falcon XXL: new projects, partnerships and events. Creative studio active in the Netherlands, Belgium and French-speaking Africa."
+    },
+    "Prices": {
+      "title": "Falcon XXL — Pricing | Audiovisual, Photo, Web, Music",
+      "description": "Check Falcon XXL pricing for our services: audiovisual production, photography, webdesign, branding, digital marketing and music. Plans for every budget."
+    },
+    "Projects": {
+      "title": "Falcon XXL — Our Projects & Work",
+      "description": "Explore Falcon XXL's work: music videos, photo galleries, webdesign and branding projects. Portfolio of a creative studio based in the Netherlands, active in Europe and Africa."
+    },
+    "Services": {
+      "title": "Falcon XXL — Our Creative Services",
+      "description": "Falcon XXL offers full services: audiovisual, photography, webdesign, branding, digital marketing and music production. Based in the Netherlands."
+    },
+    "Shop": {
+      "title": "Falcon XXL — Shop | Coming Soon",
+      "description": "The Falcon XXL shop is coming soon. Stay tuned to discover our products and exclusive offers."
+    },
+    "Trainings": {
+      "title": "Falcon XXL — Training | Coming Soon",
+      "description": "Falcon XXL training programs coming soon. Audiovisual, photography, webdesign and more. Available in Europe and French-speaking Africa."
+    },
+
+    "ConditionsOfSale": {
+      "title": "Falcon XXL — Terms & Conditions of Sale",
+      "description": "Read the terms and conditions of sale of Falcon XXL. Creative studio based in the Netherlands, specializing in audiovisual, photography, webdesign and music production."
+    },
+    "ContactUs": {
+      "title": "Falcon XXL — Contact Us",
+      "description": "Contact the Falcon XXL team for any question. Creative studio based in the Netherlands, available in Europe and French-speaking Africa."
+    },
+    "PrivacyPolicy": {
+      "title": "Falcon XXL — Privacy Policy",
+      "description": "Read Falcon XXL's privacy policy. Your personal data is protected in accordance with GDPR regulations."
+    },
+    "Faq": {
+      "title": "Falcon XXL — FAQ | Frequently Asked Questions",
+      "description": "Find answers to frequently asked questions about Falcon XXL services: audiovisual, photography, webdesign, branding and music."
+    },
+
+
+    "AudioVisual": {
+      "title": "Falcon XXL — Audiovisual Production | Music Videos & Films",
+      "description": "Falcon XXL offers professional audiovisual production: music videos, corporate films and 4K drone footage. Studio based in the Netherlands, available in Europe and French-speaking Africa."
+    },
+    "BrandIdentity": {
+      "title": "Falcon XXL — Brand Identity & Branding Services",
+      "description": "Falcon XXL builds your visual identity: logo, brand guidelines, packaging and marketing materials. Branding studio based in the Netherlands, available in Europe and French-speaking Africa."
+    },
+    "DigitalMarketing": {
+      "title": "Falcon XXL — Digital Marketing | SEO, Social Media & Ads",
+      "description": "Falcon XXL grows your online presence: digital strategy, social media management, SEO and online advertising. Studio based in the Netherlands, available in Europe and French-speaking Africa."
+    },
+    "Music": {
+      "title": "Falcon XXL — Music Production | Beats & Recording Studio",
+      "description": "Falcon XXL offers professional music production services: beats, recording, mixing and mastering. Studio based in the Netherlands, also available at falconbeat.nl."
+    },
+    "Photography": {
+      "title": "Falcon XXL — Professional Photography | Portrait & Events",
+      "description": "Falcon XXL captures your moments: portrait, events, fashion and corporate photography. Photo studio based in the Netherlands, available in Europe and French-speaking Africa."
+    },
+    "Webdesign": {
+      "title": "Falcon XXL — Webdesign & Web Development | Custom Websites",
+      "description": "Falcon XXL designs modern, fast and SEO-optimized websites. Custom webdesign for businesses and creators. Studio based in the Netherlands, available in Europe and French-speaking Africa."
+    },
+    "RequestAQuote": {
+      "title": "Falcon XXL — Request a Quote | Contact Us",
+      "description": "Request a personalized quote from Falcon XXL for your audiovisual, photography, webdesign, branding, digital marketing or music production projects. Studio based in the Netherlands."
+    }
+  },
+
   "NavbarMenu": {
     "Services": "Services",
     "Projects": "Projects",

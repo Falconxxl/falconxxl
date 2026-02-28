@@ -12,7 +12,9 @@ function PricingVideo() {
     const [openQuote, setOpenQuote] = useState(false);
 
     return (
-        <div className="Container-PricingVideo">
+        <>
+
+          <div className="Container-PricingVideo">
             <h1>{t("PricingVideo.BigTitle")}</h1>
             <div className="Container-PricingVideo-wrapper">
 
@@ -146,6 +148,7 @@ function PricingVideo() {
 
             </div>
         </div>
+      </>
     );
 }
 

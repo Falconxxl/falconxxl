@@ -1,5 +1,5 @@
 // 📁 src/pages/CollaborationDetails/CollaborationDetails.jsx
-import React from "react";
+import { Helmet } from 'react-helmet-async';import React from "react";
 import FunctionCard from "../../components/FunctionCard/FunctionCard";
 import "./Collaborationdetails.css";
 
@@ -32,7 +32,14 @@ const CollaborationDetails = ({ category, onBack }) => {
     if (!category) return null;
 
     return (
-        <div className="collab-details">
+        <>
+            <Helmet>
+                <title>Falcon XXL — Studio Créatif | Audiovisuel, Photo, Web & Music</title>
+                <meta name="description" content="Falcon XXL est un studio créatif basé aux Pays-Bas. Audiovisuel, photographie, webdesign, branding, marketing digital et production musicale. Disponible en Europe et Afrique francophone." />
+                <link rel="canonical" href="https://www.falconxxl.com/" />
+            </Helmet>
+
+            <div className="collab-details">
             {/* ── Header ── */}
             <div className="collab-details__header">
                 <button className="collab-details__back-btn" onClick={onBack}>
@@ -53,6 +60,8 @@ const CollaborationDetails = ({ category, onBack }) => {
                 ))}
             </div>
         </div>
+
+      </>
     );
 };
 

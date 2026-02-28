@@ -11,6 +11,7 @@
 // If you use React Router, wrap it in a <Route> like:
 //   <Route path="/collaborate" element={<CollaborationWrapper />} />
 
+import { Helmet } from 'react-helmet-async';
 import React, { useState, useRef } from "react";
 import Collaboration from "../Collaboration/Collaboration";
 import CollaborationDetails from "../CollaborationDetails/CollaborationDetails";
@@ -73,7 +74,14 @@ const CollaborationWrapper = () => {
     };
 
     return (
-        <div className="collab-wrapper">
+        <>
+            <Helmet>
+                <title>Falcon XXL — Studio Créatif | Audiovisuel, Photo, Web & Music</title>
+                <meta name="description" content="Falcon XXL est un studio créatif basé aux Pays-Bas. Audiovisuel, photographie, webdesign, branding, marketing digital et production musicale. Disponible en Europe et Afrique francophone." />
+                <link rel="canonical" href="https://www.falconxxl.com/" />
+            </Helmet>
+
+            <div className="collab-wrapper">
             <div className={`collab-wrapper__scene collab-wrapper__scene--${phase}`}>
                 {activePage === "main" && (
                     <Collaboration onSelectCategory={handleSelectCategory} />
@@ -86,6 +94,9 @@ const CollaborationWrapper = () => {
                 )}
             </div>
         </div>
+
+        </>
+
     );
 };
 

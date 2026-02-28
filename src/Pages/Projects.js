@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import './Projects.css';
 import NavbarMenu from "../Layout/NavbarMenu";
 import Navbar2 from "../Layout/Navbar2";
@@ -49,6 +50,12 @@ function Projects() {
 
     return (
         <>
+            <Helmet>
+                <title>{t("HelmetSEO.Projects.title")}</title>
+                <meta name="description" content={t("HelmetSEO.Projects.description")} />
+                <link rel="canonical" href="https://www.falconxxl.com/Projects" />
+            </Helmet>
+
             {loading && <PageLoader />}
 
             <div className={`projects-wrapper ${loading ? "hidden" : "visible"}`}>

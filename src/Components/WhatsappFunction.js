@@ -3,6 +3,9 @@ import './WhatsappFunction.css';
 
 function WhatsappFunction () {
     return (
+
+        <>
+
         <div className="Container-Whatsapp-function">
             <button
                 className="Container-Whatsapp-icon"
@@ -16,6 +19,8 @@ function WhatsappFunction () {
                 <i className="fa-brands fa-whatsapp"></i>
             </button>
         </div>
+
+        </>
 
     );
 }

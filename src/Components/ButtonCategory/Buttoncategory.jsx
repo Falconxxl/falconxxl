@@ -10,6 +10,8 @@ import "./Buttoncategory.css";
  */
 const ButtonCategory = ({ category, onClick }) => {
     return (
+        <>
+
         <button
             className="btn-category"
             onClick={() => onClick(category)}
@@ -29,6 +31,8 @@ const ButtonCategory = ({ category, onClick }) => {
             <span className="btn-category__label">{category.label}</span>
             <span className="btn-category__arrow">›</span>
         </button>
+        </>
+
     );
 };
 
