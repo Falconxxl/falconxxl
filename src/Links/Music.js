@@ -16,11 +16,12 @@ import PageLoader from "../Components/PageLoader";
 
 import TypeMusic from "../Layout/TypeMusic";
 import OurWorkflow from "../Layout/OurWorkflow";
-import PricingMusic from "../Layout/PricingMusic";
+// import PricingMusic from "../Layout/PricingMusic";
 
 import RequestAQuoteModal from "../Components/Modal/RequestAQuoteModal";
 import RequestAQuote from "../Components/RequestAQuote";
 import WhatsappFunction from "../Components/WhatsappFunction";
+import Ads from "../Layout/Ads";
 
 
 function Music() {
@@ -55,6 +56,7 @@ function Music() {
             <NavbarMenu/>
             <NavbarMenuMobile/>
             <Navbar2/>
+
             {/*------banner---------------*/}
 
             <header className="hero-banner">
@@ -136,9 +138,11 @@ function Music() {
 
             <TypeMusic/>
 
-            <PricingMusic/>
+            {/*<PricingMusic/>*/}
 
             <OurWorkflow/>
+
+        <Ads/>
 
             {/*----------why shoosing our music services-----------*/}
 

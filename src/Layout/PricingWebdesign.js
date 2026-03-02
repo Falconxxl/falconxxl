@@ -20,7 +20,6 @@ function PricingWebdesign() {
             <h1>{t("PricingWebdesign.BigTitle")}</h1>
             <div className="Container-PricingVideo-wrapper">
 
-
                 {/*----------Basic Package----------------*/}
 
                 <div className="PricingVideo-details-x">
@@ -90,8 +89,11 @@ function PricingWebdesign() {
 
                 {/*----------Gold Package----------------*/}
 
-                <div className="PricingVideo-details-Golg" style={{backgroundColor:"red"}}>
-                    <h2>{t("PricingWebdesign.PremiumDeluxe.Title")}</h2>
+                <div className="PricingVideo-details-Golg"
+                     // style={{backgroundColor:"red", width:"80%"}}
+
+                >
+                    <h2 >{t("PricingWebdesign.PremiumDeluxe.Title")}</h2>
 
                     <ul className="pricing-list-Gold">
                         <li><i className="fa-solid fa-check"></i><span>{t("PricingWebdesign.PremiumDeluxe.ContentLine1")}</span></li>

@@ -160,7 +160,7 @@
 .ads-title {
     font-family: "Georgia", "Times New Roman", serif; /* ← changez la police ici */
     font-size: clamp(1.5rem, 2.5vw, 2.2rem);
-    font-weight: 400;
+    font-weight: 800;
     line-height: 1.25;
     color: var(--ads-color-title);
     margin: 0 0 1.2rem 0;
@@ -283,12 +283,13 @@
     .ads-btn {
         justify-content: center;
         width: 100%;
+        padding: 15px 30px;
     }
 }
 
 @media (max-width: 480px) {
     .ads-title {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
 
     .ads-description {

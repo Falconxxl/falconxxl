@@ -14,7 +14,6 @@ function PricingMusic() {
     return (
         <>
 
-
          <div>
 
             {/*-------------Beat packages-----------------------------------*/}

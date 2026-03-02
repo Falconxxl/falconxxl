@@ -130,8 +130,9 @@
 /* SECTION GLOBALE */
 .kinshasa-wrapper {
     background-color: #ffffff;
-    padding-top: 0px;
+    padding-top: 100px;
     padding-bottom: 100px;
+
 }
 
 /* CONTENEUR — pour gérer les marges */
@@ -345,8 +346,13 @@
     }
 
     .gotflow-flyer {
-            height: 900px;
-            border-radius: 30px;
+            height: 600px;
+            /*width: 380px;*/
+            /*height: auto;*/
+            /*border-radius: 30px;*/
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: none;
 
             background-image: url("../Images/who-got-bars-mobile3.jpg");
             background-position: center;
@@ -383,6 +389,9 @@
     .Relook-container {
         margin-left: 20px;
         margin-right: 20px;
+        /*background-color: red;*/
+        padding-bottom: 30px;
+        padding-top: 10px;
     }
 
     /*!* FLYER *!*/
@@ -399,12 +408,14 @@
         bottom: 40px;
         top: 480px;
         max-width: 100%;
+        padding-bottom: 50px;
     }
 
     /* TEXTE */
     .Relook-text {
         font-size: 17px;
         line-height: 1.5;
+        /*padding-top: 0px;*/
     }
 
     /* BOUTON */
@@ -413,13 +424,29 @@
         padding: 14px 28px;
         font-size: 17px;
         margin-left: 20px;
+        /*margin-bottom: 100px;*/
     }
 
     .Relook-flyer {
-        height: 900px;
-        border-radius: 30px;
-
-        background-image: url("../Images/Relook_ton_Business_mobile.jpg");
+        height: 750px;
+        /*border-radius: 30px;*/
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+        background-image: url("../Images/Relook_ton_Business_mobile4.png");
         background-position: center;
+        border-radius: 30px;
     }
+
+    /*height: 600px;*/
+    /*!*width: 380px;*!*/
+    /*!*height: auto;*!*/
+    /*!*border-radius: 30px;*!*/
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+
+    /*background-image: url("../Images/who-got-bars-mobile3.jpg");*/
+    /*background-position: center;*/
+
+
 }

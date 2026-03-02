@@ -23,6 +23,7 @@
     /*margin: 50px;*/
     /*color: black;*/
     color: black;
+    line-height: 1.2;
     text-align: center;
     /*width: 900px;*/
     /*padding-bottom: 20px;*/
@@ -244,6 +245,7 @@
         /*margin: 3px;*/
         margin-left: 20px;
         /*background-color: #f3bb2f;*/
+        line-height: 1.2;
 
     }
 

@@ -14,7 +14,7 @@ import compo_webdesign_laptop3 from "../Images/compo_laptop3a_webdesign.png";
 
 import { Link } from "react-scroll";
 import OurWorkflow from "../Layout/OurWorkflow";
-import PricingWebdesign from "../Layout/PricingWebdesign";
+// import PricingWebdesign from "../Layout/PricingWebdesign";
 
 import React, { useState, useEffect } from "react";
 import PageLoader from "../Components/PageLoader";
@@ -174,7 +174,7 @@ function Webdesign() {
                     </div>
                 </div>
 
-                <PricingWebdesign/>
+                {/*<PricingWebdesign/>*/}
                 <OurWorkflow/>
                 <WhatsappFunction/>
                 <Footer/>

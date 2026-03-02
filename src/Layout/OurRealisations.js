@@ -12,8 +12,8 @@ import papeterie_branding_image from "../Images/image_papeterie_branding4";
 import pub_branding_image from "../Images/image_support_pub2";
 import branding_digital_image from "../Images/image_branding_digital3";
 
-import Cd_cover_image from "../Images/Cd-cover.png";
-import video_boucle_Dream_Girl from "../../src/MyVideos/dream_girl_NosRealisastions.mp4";
+// import Cd_cover_image from "../Images/Cd-cover.png";
+// import video_boucle_Dream_Girl from "../../src/MyVideos/dream_girl_NosRealisastions.mp4";
 
 import React from "react";
 import { useTranslation } from "react-i18next";
@@ -164,52 +164,52 @@ function OurRealisations() {
                     {t("OurRealisation.Music.Title2")}
                 </h2>
 
-                <p>
+                <p style={{marginBottom:"0px"}}>
                     {t("OurRealisation.Music.SubtitleLine1")}
                 </p>
 
-                <div className="Container-OurRealisations-music">
+                {/*<div className="Container-OurRealisations-music">*/}
 
-                    <div className="OurRealisations-music-CoverText">
-                        <img src={Cd_cover_image} alt="Cd_cover_image" className="image_Cd_cover"/>
-                        <h1>
-                            Dream Girl
-                        </h1>
+                {/*    <div className="OurRealisations-music-CoverText">*/}
+                {/*        <img src={Cd_cover_image} alt="Cd_cover_image" className="image_Cd_cover"/>*/}
+                {/*        <h1>*/}
+                {/*            Dream Girl*/}
+                {/*        </h1>*/}
 
-                        <h2>
-                            Ilunga
-                        </h2>
+                {/*        <h2>*/}
+                {/*            Ilunga*/}
+                {/*        </h2>*/}
 
-                        <p>
-                            {t("OurRealisation.Music.DreamGirl.ContentLine1")}
-                            <br/><br/>
-                            {t("OurRealisation.Music.DreamGirl.ContentLine2")}
-                        </p>
+                {/*        <p>*/}
+                {/*            {t("OurRealisation.Music.DreamGirl.ContentLine1")}*/}
+                {/*            <br/><br/>*/}
+                {/*            {t("OurRealisation.Music.DreamGirl.ContentLine2")}*/}
+                {/*        </p>*/}
 
-                        <a
-                            href="https://www.youtube.com/watch?v=ri8RdSNmzVM&list=RDri8RdSNmzVM&start_radio=1"
-                            target="_blank"
-                            style={{color:"#fcd552", fontsize:"50px", fontWeight:"600"}}
-                            rel="noopener noreferrer"
-                            className="Footer-links"
-                        >
-                            Dream Girl - ILUNGA (Music video)
-                        </a>
-                    </div>
+                {/*        <a*/}
+                {/*            href="https://www.youtube.com/watch?v=ri8RdSNmzVM&list=RDri8RdSNmzVM&start_radio=1"*/}
+                {/*            target="_blank"*/}
+                {/*            style={{color:"#fcd552", fontsize:"50px", fontWeight:"600"}}*/}
+                {/*            rel="noopener noreferrer"*/}
+                {/*            className="Footer-links"*/}
+                {/*        >*/}
+                {/*            Dream Girl - ILUNGA (Music video)*/}
+                {/*        </a>*/}
+                {/*    </div>*/}
 
-                    <div className="OurRealisations-music-video">
-                        <video
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            className="OurRealisations-music-video-yes"
-                        >
-                            <source src={video_boucle_Dream_Girl} type="video/mp4" />
-                        </video>
-                    </div>
+                {/*    <div className="OurRealisations-music-video">*/}
+                {/*        <video*/}
+                {/*            autoPlay*/}
+                {/*            muted*/}
+                {/*            loop*/}
+                {/*            playsInline*/}
+                {/*            className="OurRealisations-music-video-yes"*/}
+                {/*        >*/}
+                {/*            <source src={video_boucle_Dream_Girl} type="video/mp4" />*/}
+                {/*        </video>*/}
+                {/*    </div>*/}
 
-                </div>
+                {/*</div>*/}
             </div>
 
             <NavLink to='/Music' className="btn-OurRealisations-more">

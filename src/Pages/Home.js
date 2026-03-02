@@ -12,12 +12,21 @@ import OurRealisations from "../Layout/OurRealisations";
 import WhatsappFunction from "../Components/WhatsappFunction";
 import { useTranslation } from "react-i18next";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import PageLoader from "../Components/PageLoader";
 import Ads from "../Layout/Ads";
+import video_boucle_banner from "../MyVideos/z_banner40 (correct 4).mp4";
+import video_boucle_banner_mobile from "../MyVideos/Banner_Site_ boucle (Mobile 10) correct3.mp4";
+import RequestAQuoteModal from "../Components/Modal/RequestAQuoteModal";
+import RequestAQuote from "../Components/RequestAQuote";
+import {Link} from "react-scroll";
+// import Welcome from "../Layout/Welcome";
+// import WelcomeMobile from "../Layout/WelcomeMobile";
 
 
 function Home() {
+
+    const [openQuote, setOpenQuote] = useState(false);
 
     const { t } = useTranslation();
 
@@ -48,7 +57,53 @@ function Home() {
                 <NavbarMenu/>
                 <NavbarMenuMobile/>
                 <Navbar2/>
-                <ContainerBanner2/>
+
+                {/*----------banner audiovisuel--------------------------------------*/}
+                <header className="AudioVisual-banner">
+                    <video autoPlay muted loop playsInline className="AudioVisual-video desktop-video">
+                        <source src={video_boucle_banner} type="video/mp4"/>
+                    </video>
+
+                    <video autoPlay muted loop playsInline className="AudioVisual-video mobile-video">
+                        <source src={video_boucle_banner_mobile} type="video/mp4"/>
+                    </video>
+
+                    <div className="AudioVisual-content">
+                        <button
+                            className="cta-btn-AudioVisual"
+                            onClick={() => setOpenQuote(true)}
+                        >
+                            {t("ContainerBanner2.CatBouton")}
+                        </button>
+
+                        <RequestAQuoteModal
+                            open={openQuote}
+                            onClose={() => setOpenQuote(false)}
+                        >
+                            <RequestAQuote />
+                        </RequestAQuoteModal>
+                    </div>
+
+                    <Link
+                        to="AudioVisual-Description"
+                        className="AudioVisual-scroll-down"
+                        offset={-90}
+                        duration={500}
+                        spy
+                        smooth
+                    >
+                        <i className="fa-solid fa-angles-down"></i>
+                    </Link>
+                </header>
+
+                {/*---------------Description----------------*/}
+
+                {/*<Welcome/>*/}
+
+                {/*<WelcomeMobile/>*/}
+
+                {/*--------------------------------------------------------------------------*/}
+
                 <div className="Section-WhoAreWe"
                      style={{backgroundColor:"black"}}
                 >
@@ -104,6 +159,10 @@ function Home() {
                 <Ads/>
                 <OurRealisations/>
                 <OurWorkflow/>
+                {/*--------------------------------------------------------------------------*/}
+                <ContainerBanner2/>
+
+                {/*--------------------------------------------------------------------------*/}
                 <WhyUs/>
                 <WhatsappFunction/>
                 <Footer/>

@@ -91,7 +91,6 @@ function News() {
                 </div>
             </section>
 
-
             {/*----------------FalconBeat (Ads)-----------------*/}
 
             <Ads/>

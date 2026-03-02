@@ -6,6 +6,7 @@ import React, {useState} from "react";
 import Modal1 from "../Components/Modal/Modal1";
 import icon_film from "../Images/icon_film2.png";
 import Wedding_home from "../Images/mike_brenda_home.png";
+import ContainerBanner2 from "../Layout/ContainerBanner2";
 
 
 function ServiceHome2() {
@@ -16,6 +17,8 @@ function ServiceHome2() {
     return (
 
         <>
+
+            <ContainerBanner2/>
 
         <div className="Container-ServiceHome-single">
 

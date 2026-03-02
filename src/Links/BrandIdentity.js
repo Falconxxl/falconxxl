@@ -15,14 +15,13 @@ import RequestAQuoteModal from "../Components/Modal/RequestAQuoteModal";
 import RequestAQuote from "../Components/RequestAQuote";
 import PageLoader from "../Components/PageLoader";
 
-
 import TypeBranding from "../Layout/TypeBranding";
 
 import branding_image1 from "../Images/image_papeterie_branding4"
 import branding_image2 from "../Images/image_support_pub2"
 import branding_image3 from "../Images/image_branding_digital3"
 import branding_image4 from "../Images/image_branding_digital4"
-import PricingBranding from "../Layout/PricingBranding";
+// import PricingBranding from "../Layout/PricingBranding";
 import OurWorkflow from "../Layout/OurWorkflow";
 import WhatsappFunction from "../Components/WhatsappFunction";
 import { useTranslation } from "react-i18next";
@@ -235,7 +234,7 @@ function BrandIdentity() {
 
             {/*------------Pricing Branding-------------------------------*/}
 
-            <PricingBranding/>
+            {/*<PricingBranding/>*/}
             <OurWorkflow/>
 
             {/*----------why shoosing our Branding services-----------*/}
