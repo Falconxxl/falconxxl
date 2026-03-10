@@ -34,7 +34,7 @@
     .Container-NavbarMenuMobile {
         width: 100%;
         height: 12vh;
-        /*background-color: #1c1c1c;*/
+        /*background-color: green;*/
         background-color: transparent;
         display: flex;
         justify-content: space-between; /* espace entre les 3 éléments */
@@ -43,7 +43,8 @@
         padding-right: 20px;
         /*padding: 0 20px;*/
         box-sizing: border-box;
-        z-index: 500;
+        /*z-index: 900;*/
+        z-index: 1000;
         /*background-color: greenyellow;*/
         /*top: 0;*/
         /*left: 0;*/
@@ -71,6 +72,11 @@
         top: 0;
         left: 0;
         position: fixed;
+        /*z-index: 900;*/
+        z-index: 1000;
+    }
+
+    .Navbar-mobile {
         z-index: 1000;
     }
 

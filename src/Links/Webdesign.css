@@ -167,4 +167,34 @@ body {
         left: 90%;
     }
 
+
+    .Container-OurWorkflow {
+        width: 100%;
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .Container-OurWorkflow h1 {
+        text-align: center;
+    }
+
+    .OurWorkflow-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .Container-OurWorkflow-content {
+        width: 100% !important;
+    }
+
+    .OurRealisations-webdesign-image img {
+        width: 100% !important;
+    }
+
 }

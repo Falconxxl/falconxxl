@@ -130,7 +130,7 @@ function Photography() {
 
                 <section
                     className="audiovisual-direction-Mike"
-                    style={{ backgroundColor: "black" }}
+                    style={{ backgroundColor: "#2c0039" }}
                 >
                     <div className="direction-Mike-inner">
                         <div className="audiovisual-direction-text">

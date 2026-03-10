@@ -137,6 +137,7 @@ function AudioVisual() {
                             {t("ContainerBanner2.CatBouton")}
                             <i className="fa-solid fa-arrow-right"></i>
                         </button>
+
                         <RequestAQuoteModal
                             open={openQuote}
                             onClose={() => setOpenQuote(false)}

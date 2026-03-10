@@ -116,30 +116,63 @@
 /*------------------------------------------*/
 
 /* Mobile */
+/*@media (max-width: 768px) {*/
+
+/*    .OurWorkflow-wrapper {*/
+/*        width: 100%;*/
+/*        height: auto;*/
+/*        !*background-color: navajowhite;*!*/
+/*        display: flex;*/
+/*        justify-content: center;*/
+/*        flex-wrap: wrap;*/
+/*        gap: 30px;*/
+/*        padding-left: 10%;*/
+/*        padding-right: 10%;*/
+/*    }*/
+
+/*    .Container-OurWorkflow-content {*/
+/*        width: 320px;*/
+/*        height: auto;*/
+/*        background-color: #1c1c1c;*/
+/*        border-radius: 35px;*/
+/*        padding: 30px;*/
+/*    }*/
+
+/*    .Container-OurWorkflow h1 {*/
+/*        padding-bottom: 50px;*/
+/*    }*/
+
+/*}*/
+
 @media (max-width: 768px) {
 
-    .OurWorkflow-wrapper {
-        width: 100%;
-        height: auto;
-        /*background-color: navajowhite;*/
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 30px;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
-    .Container-OurWorkflow-content {
-        width: 320px;
-        height: auto;
-        background-color: #1c1c1c;
-        border-radius: 35px;
-        padding: 30px;
+    .Container-OurWorkflow {
+        padding-top: 40px;
+        padding-bottom: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .Container-OurWorkflow h1 {
-        padding-bottom: 50px;
+        font-size: clamp(32px, 8vw, 45px);
+        padding-bottom: 40px;
+        text-align: center;
     }
 
+    .OurWorkflow-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;  /* ← empile les cards verticalement */
+        align-items: center;
+        gap: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .Container-OurWorkflow-content {
+        width: 100%;        /* ← prend toute la largeur disponible */
+        max-width: 500px;   /* ← limite sur les grands mobiles */
+        border-radius: 25px;
+        padding: 25px;
+    }
 }

@@ -179,11 +179,11 @@
 }
 
 @media (max-width: 480px) {
+
     .hero-content h1 { font-size: 3rem; }
-    /*.hero-content p { font-size: 1rem; margin-bottom: 60px; }*/
-    .hero-content .cta-btn  {
-        font-size: 18px;
-        /*padding: 20px 35px;*/
+    .hero-content .cta-btn {
+        font-size: 14px;
+        padding: 14px 35px;
     }
     .scroll-down {
         left: 90%;

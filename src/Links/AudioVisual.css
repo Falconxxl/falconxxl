@@ -55,14 +55,14 @@
     background-color: #f3bb2f;
     color: black;
     text-decoration: none;
-    padding: 20px 40px;
+    padding: 18px 30px;
     font-family: "Figtree", sans-serif;
     /*border-radius: 8px;*/
     border-radius: 60px;
     /*border: 2px solid #f3bb2f;*/
     border:none;
     /*font-size: 22px;*/
-    font-size: 20px;
+    font-size: 17px;
     /*letter-spacing: 1px;*/
     /*margin-left: 200px;*/
     /*color: red;*/
@@ -352,7 +352,7 @@
     line-height: 1.1;
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
-    color: black;
+    color: white;
 }
 
 .audiovisual-direction-text p {
@@ -360,7 +360,7 @@
     font-weight: 400;
     line-height: 1.6;
     font-family: 'Poppins', sans-serif;
-    color: black;
+    color: white;
 }
 
 {/*---------------making-off----------------*/}
@@ -499,6 +499,10 @@
         /*top: 45%;               !* un peu plus haut sur mobile *!*/
     }
 
+    .cta-btn-AudioVisual {
+        padding: 15px 27px;
+    }
+
 
     /*------Description--------*/
 
@@ -566,9 +570,16 @@
         flex-direction: column;
     }
 
+    /*.Drone-quote-button {*/
+    /*    margin-left: 130px;*/
+    /*    margin-bottom: 40px;*/
+    /*}*/
+
     .Drone-quote-button {
-        margin-left: 130px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 40px;
+        display: block;
     }
 
     .wrapper-drone-video {
@@ -649,6 +660,7 @@
         line-height: 1.1;
         margin-bottom: 20px;
         font-family: 'Poppins', sans-serif;
+        margin-top: 20px; /* ← ajustez la valeur selon vos besoins *
     }
 
 
@@ -692,9 +704,16 @@
         flex-direction: column;
     }
 
+    /*.Drone-quote-button {*/
+    /*    margin-left: 70px;*/
+    /*    margin-bottom: 40px;*/
+    /*}*/
+
     .Drone-quote-button {
-        margin-left: 70px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 40px;
+        display: block;
     }
 
     .texte-drone h1 {

@@ -177,17 +177,13 @@
     }
     .title-info-contact{
         padding-top: 0px;
+        font-size: 20px;
     }
 
 /*-------*/
 
     .Contact-form-container {
-        /*background-color: greenyellow;*/
-        /*display: flex;*/
-        /*justify-content: center;*/
-        /*height: auto;*/
         width: 100%;
-        /*flex-wrap: wrap;*/
     }
 
     .section-contact-info {

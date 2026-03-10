@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+// import { Helmet } from 'react-helmet-async';
 import React, { useState } from 'react';
 import './RequestAQuote.css';
 import TopButton from "./TopButton";
@@ -110,12 +110,6 @@ function RequestAQuote({ onClose }) {
     return (
 
         <>
-            <Helmet>
-                <title>{t("HelmetSEO.RequestAQuote.title")}</title>
-                <meta name="description" content={t("HelmetSEO.RequestAQuote.description")} />
-                <link rel="canonical" href="https://www.falconxxl.com/RequestAQuote" />
-            </Helmet>
-
             <div>
             <div className="Container-icon-RequestAQuote">
                 <button

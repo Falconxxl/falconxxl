@@ -13,6 +13,7 @@ function NavbarMenu() {
     // ✅ Le state du menu remonte ici pour être partagé
     const [menuOpen, setMenuOpen] = useState(false);
 
+
     return (
 
         <>

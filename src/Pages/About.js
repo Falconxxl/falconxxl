@@ -172,7 +172,9 @@ function About() {
                 <section className="audiovisual-direction-Mike" style={{
                     borderBottom: "1px solid",
                     borderImage: "linear-gradient(to right, #f9e054, #cb954d) 1",
-                    paddingBottom:"0px"}}
+                    paddingBottom:"0px",
+                    backgroundColor:"white"
+                }}
                 >
                     <div className="direction-Mike-inner" style={{width:"100%", maxWidth:"1400px"}}>
                         <div className="audiovisual-direction-image" style={{maxWidth:"600px"}}>
@@ -183,7 +185,9 @@ function About() {
                             <div className="audiovisual-direction-badge">
                             </div>
 
-                            <h1>{t("FounderMichael.BigTitle")}</h1>
+                            <h1 style={{color:"#1c6077"}}>
+                                {t("FounderMichael.BigTitle")}
+                            </h1>
 
                             <p style={{color:"black", fontWeight:"320", fontFamily:"Poppins, sans-serif", lineHeight:"1.5"}}>
                                 {t("FounderMichael.Paragraphe1")}<br/><br/>

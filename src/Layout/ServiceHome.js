@@ -149,7 +149,7 @@ function ServiceHome () {
                     <p>
                         {t("ServiceHomeExplore.MusicProduction.ContentLine1")}{" "}
 
-                        <a href="http://localhost:3001/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.falconbeat.nl" target="_blank" rel="noopener noreferrer"
                         style={{color:"#f3bb2f", fontWeight:"800", textDecoration:"none"}}>
                             FalconBeat
                         </a>
