@@ -14,8 +14,8 @@ import WhatsappFunction from "../Components/WhatsappFunction";
 import { useTranslation } from "react-i18next";
 import Ads from "../Layout/Ads";
 
-import video_boucle_banner from "../MyVideos/z_banner40 (quality 40MB correct news).mp4";
-import video_boucle_banner_mobile from "../MyVideos/Banner_Site_ boucle (Mobile 10) correct news.mp4";
+import video_boucle_banner from "../MyVideos/banner_desktop.mp4";
+import video_boucle_banner_mobile from "../MyVideos/banner_mobile.mp4";
 
 import RequestAQuoteModal from "../Components/Modal/RequestAQuoteModal";
 import RequestAQuote from "../Components/RequestAQuote";
