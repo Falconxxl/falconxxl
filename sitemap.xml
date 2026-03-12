@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Pages principales -->
+    <url>
+        <loc>https://www.falconxxl.com/</loc>
+        <priority>1.0</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/Services</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/Projects</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/About</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/Prices</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/Contact</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/News</loc>
+        <priority>0.7</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/Shop</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/Trainings</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/Collaboration</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <!-- Pages services (Links) -->
+    <url>
+        <loc>https://www.falconxxl.com/AudioVisual</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/Photography</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/Webdesign</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/BrandIdentity</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/Music</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/DigitalMarketing</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <!-- Pages légales -->
+    <url>
+        <loc>https://www.falconxxl.com/PrivacyPolicy</loc>
+        <priority>0.4</priority>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/ConditionsOfSale</loc>
+        <priority>0.4</priority>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.falconxxl.com/Faq</loc>
+        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+</urlset>
+
